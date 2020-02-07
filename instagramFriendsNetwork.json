@@ -2,799 +2,982 @@
 	{
 	"node":"hlferreira27",
 	"followers": ["margarida__monteiro", "mariajmduarte", "juaninha.silva", "ines_mcm", "marianapreal", "joanafpribeiro", "vascocruzrodrigues", "carolinaaalves17", "andreeira", "inespinta", "julianaj.g", "maggieeee.12", "inacio.diogo98", "tiagoatfonseca", "franciscojsrosa", "joanarocharaposo", "marianamfelino", "joanne__reis", "francisco.real.bentes", "daniisof.amaral", "alxsous", "susmonteiro", "ldpted", "catariinacnunes", "regouga", "inocaaa", "joaopinaa", "jdcenoura", "marianaccintrao", "inesppereira99", "martasaparicio", "catarinalegria", "ma_britess", "freddydlima", "lucet15", "miana.nunes", "ines_batina", "nuno.martinss", "rafa_noideas", "sanchabbarroso", "chinoips", "pedro_lamego", "joaocosmelli", "gce.neiist", "rosinha4580", "jp_anastacio_", "ana.caf", "joana.prates", "sofiaaparicioofficial", "pedrogbcampos", "nixnij14", "goncalo_gil_simoes", "josebartissol", "_mrdominguez", "tiago.barroso1", "sinfoist", "isabelsoares16", "husseingiva", "nesita97", "fiambredunicornio", "r.velhinho", "miguelchorao34", "inescnvdias", "decasppereira", "danielmaramalho", "joanasteodoro", "ritaa.alves98", "ritacsjfernandes", "marianaisidrodocarmo", "valerianestarte", "nadia_remtula", "1inees3", "saraquel_campos", "reynaud_filipe", "joaojtmarques", "biscoito.fofinho", "j.diogotavares", "jessicafortedefaria", "joao_barata98", "tiagoprata98", "xemosby", "ritaprates", "afonsocrg", "madalenakuma", "senhor.lourenco", "carolinaavitorino", "franciscowmatos", "antoniocptsl", "joanaaialves", "pakh.momo", "danielseara99", "mariaforjo", "andre_rocha98", "marta_narciso", "katkat_twix", "chengyu_163", "rodrigo.jt.mota", "rodrigo_df98", "menapedreira", "mariaaacatita", "carlotaferreira1", "vsanto436", "blxbeatriz", "carolinalwx", "agalambas", "pedro.cruz28597", "nunonobrega98", "carlosmiguelpt", "celinassousa", "guilherme.ocarvalho", "pedro.pacheco.735507", "madaaav", "miguel_vladimiro_ferreira_", "p.s.lyra", "martaambrosioo", "bcustodio1539", "martin.goncalves", "thelusitana", "ineslacerdaa", "artur.fortunato", "abcrodrigues96", "diopinto6", "nadiasofia_f", "ines_gerardo", "dtnunes", "andrecabaco", "heliojdomingos", "whyviidee", "franciscadssantos", "santola_pedro", "mcdino98", "afonsobli", "fredborlido", "definitelynotjota", "98migrocha", "annushkavk", "ay_no_sekai", "nandobamaral", "marrucho14", "petrony98", "nuno_pinelaa", "itsmenunoo", "miguelbaptista98", "cristinaprataruivo", "danielsil30", "amargaridaferro", "rodri.melopinto", "dcacho23", "lexmaroco", "_ana.goncalves_", "carolina_fpf", "anasofia163", "jose.salbany", "rita_xarepe", "tiagomsaneves", "tele.castro", "patriciag98", "olga_lourenco17", "dcaramujo", "salbunny98", "ineespedro", "mariafdbrito", "castanhas98", "martajoana", "maggiepcunha", "maximus_triglicemicos", "xyc_52", "cncvg", "antoniomendes208", "bia_carmo", "datgoncalves", "thealex1406", "rita_sfernandes", "sara.espiritosanto.3", "joserafaeltavares", "edu_tbraga", "matildecmelo", "margarida_b_pereira", "sofia_candeias", "mafaldabjacinto", "mariana_machado98", "ricardopedro90", "marianalfsousa", "nunoquintanilha", "carlosajalmeida", "marisa_clourenco", "beatrizjpereira", "maria.w.f", "afonso0854", "raquelranito", "margarida99", "afonsomcarvalho97", "andre_nogueira23", "miguelsoaresoares"],
-	"commonNumber": 0}
+	"commonNumber": 0,
+	"group": 0}
 ,{
 	"node":"margarida__monteiro",
 	"followers": ["celinassousa", "carolinalwx", "blxbeatriz", "carlosmiguelpt"],
-	"commonNumber": 4}
+	"commonNumber": 4,
+	"group":5}
 ,{
 	"node":"mariajmduarte",
 	"followers": ["chinoips", "gce.neiist", "sanchabbarroso", "rodrigo_df98", "lexmaroco", "jdcenoura", "goncalo_gil_simoes", "danielseara99", "_mrdominguez", "nuno.martinss", "carolinaavitorino", "joanarocharaposo", "miana.nunes", "pedro_lamego", "vascocruzrodrigues", "miguelbaptista98", "franciscojsrosa", "josebartissol", "nadiasofia_f", "itsmenunoo", "susmonteiro", "joaopinaa", "daniisof.amaral", "tiagoprata98", "lucet15", "joao_barata98", "inesppereira99", "marianaccintrao", "maggieeee.12", "freddydlima", "inocaaa", "ma_britess"],
-	"commonNumber": 32}
-,{
-	"node":	"juaninha.silva",
-	"followers": ["sanchabbarroso", "agalambas", "_mrdominguez", "miguelbaptista98", "franciscojsrosa", "ines_mcm", "ritaprates", "dtnunes", "martaambrosioo", "joao_barata98", "pakh.momo", "artur.fortunato", "danielseara99", "ay_no_sekai"],
-	"commonNumber": 14}
+	"commonNumber": 32,
+"group":3}
 ,{
 	"node":	"ines_mcm",
 	"followers": ["miana.nunes", "sanchabbarroso", "decasppereira", "ay_no_sekai", "nuno.martinss", "chinoips", "juaninha.silva", "marianapreal", "afonsocrg", "rodri.melopinto", "pedro_lamego", "tiagoprata98"],
-	"commonNumber": 12}
+	"commonNumber": 12,
+"group":3}
 ,{
 	"node":	"marianapreal",
 	"followers": ["joaopinaa", "agalambas", "ma_britess", "sanchabbarroso", "_mrdominguez", "miana.nunes", "miguelbaptista98", "pedro_lamego", "ines_mcm", "joaojtmarques", "catarinalegria", "decasppereira"],
-	"commonNumber": 12}
+	"commonNumber": 12,
+"group":3}
 ,{
 	"node":	"joanafpribeiro", 
 	"followers": ["joanaaialves", "gce.neiist", "goncalo_gil_simoes", "heliojdomingos", "ines_batina", "amargaridaferro", "josebartissol", "regouga", "martasaparicio", "nesita97", "joaopinaa", "nadiasofia_f", "madaaav"],
-	"commonNumber": 13}
+	"commonNumber": 13,
+"group":3}
 ,{
 	"node":	"carolinaaalves17",
 	"followers": ["ana.caf", "rafa_noideas", "afonsomcarvalho97", "andreeira", "jp_anastacio_", "andre_nogueira23", "inespinta"],
-	"commonNumber": 7}
+	"commonNumber": 7,
+"group":5}
 ,{
 	"node":	"andreeira",
 	"followers": ["carolinaaalves17", "catariinacnunes", "jp_anastacio_", "ana.caf", "inespinta", "andre_nogueira23", "afonsomcarvalho97", "rosinha4580", "carolina_fpf", "sanchabbarroso"],
-	"commonNumber": 10}
+	"commonNumber": 10,
+"group":5}
 ,{
 	"node":	"inespinta",
 	"followers": ["afonsomcarvalho97", "carolinaaalves17", "rosinha4580", "1inees3", "andreeira", "andre_nogueira23", "catariinacnunes", "ana.caf", "jp_anastacio_"],
-	"commonNumber": 9}
+	"commonNumber": 9,
+"group":5}
 ,{
 	"node":	"julianaj.g",
 	"followers": [],
-	"commonNumber": 0}
+	"commonNumber": 0,
+"group":5}
 ,{
 	"node":	"maggieeee.12",
 	"followers": ["marrucho14", "thelusitana", "regouga", "lucet15", "mariajmduarte", "vascocruzrodrigues", "martasaparicio", "ay_no_sekai", "menapedreira", "rodrigo_df98", "daniisof.amaral", "biscoito.fofinho", "joanarocharaposo", "artur.fortunato", "danielmaramalho", "joao_barata98", "pedrogbcampos", "franciscojsrosa", "joaopinaa", "jdcenoura", "chinoips", "itsmenunoo", "inesppereira99", "nuno.martinss", "antoniocptsl"],
-	"commonNumber": 54}
+	"commonNumber": 54,
+"group":3}
 ,{
 	"node":	"inacio.diogo98",
 	"followers": ["marta_narciso", "santola_pedro", "salbunny98", "petrony98", "maximus_triglicemicos", "castanhas98", "patriciag98", "rita_xarepe", "thealex1406", "edu_tbraga", "afonsomcarvalho97", "miguelsoaresoares"],
-	"commonNumber": 12}
+	"commonNumber": 12,
+"group":1}
 ,{
 	"node":	"tiagoatfonseca",
 	"followers": ["nuno.martinss", "vascocruzrodrigues", "agalambas", "joao_barata98", "tiago.barroso1", "danielseara99", "menapedreira", "jdcenoura", "rodrigo_df98", "franciscojsrosa", 
 		"sanchabbarroso", "danielsil30", "danielmaramalho", "joaopinaa", "daniisof.amaral", "ldpted", "alxsous", "marianaccintrao", "miana.nunes", "inesppereira99", "inocaaa", "chinoips", "ines_batina", "ma_britess", "maggieeee.12", "catarinalegria", "98migrocha", "lucet15", "thelusitana", "amargaridaferro", "martasaparicio", "nadiasofia_f", "carolinaavitorino", "martaambrosioo", "lexmaroco", "josebartissol", "joanasteodoro", "_mrdominguez", "miguelbaptista98", "pedro_lamego", "afonsocrg", "heliojdomingos", "ritaprates", "dcacho23", "joaojtmarques", "isabelsoares16", "pakh.momo", "decasppereira", "mariaforjo", "joanaaialves"],
-	"commonNumber": 50}
+	"commonNumber": 50,
+"group":3}
 ,{
 	"node":	"franciscojsrosa",
 	"followers": ["mariajmduarte", "heliojdomingos", "susmonteiro", "joao_barata98", "_mrdominguez", "marianaccintrao", "isabelsoares16", "catarinalegria", "vascocruzrodrigues", "juaninha.silva", "r.velhinho", "pedro_lamego", "daniisof.amaral", "joaopinaa", "gce.neiist", "definitelynotjota", "maggieeee.12", "ines_batina", "sanchabbarroso", "tiagoatfonseca", "danielmaramalho", "jdcenoura", "decasppereira", "afonsocrg", "miana.nunes", "regouga", "inocaaa", "chinoips", "ma_britess", "joaojtmarques", "inesppereira99", "francisco.real.bentes", "madaaav", "biscoito.fofinho", "josebartissol", "goncalo_gil_simoes", "joanasteodoro", "menapedreira", "ritacsjfernandes", "afonsobli", "sofiaaparicioofficial", "amargaridaferro", "ay_no_sekai", "98migrocha", "miguelbaptista98", "_ana.goncalves_", "agalambas", "carolinaavitorino", "mariaforjo", "joanaaialves", "thelusitana", "fredborlido", "nadiasofia_f", "martaambrosioo", "lexmaroco", "dcacho23", "ritaprates"],
-	"commonNumber": 57}
+	"commonNumber": 57,
+"group":3}
 ,{
 	"node":	"joanarocharaposo",
 	"followers": ["goncalo_gil_simoes", "mariajmduarte", "daniisof.amaral", "maggieeee.12", "pedro_lamego", "dtnunes", "susmonteiro", "isabelsoares16", "miana.nunes", "decasppereira", "freddydlima", "lucet15", "joaojtmarques", "inocaaa", "ma_britess", "jdcenoura"],
-	"commonNumber": 16}
+	"commonNumber": 16,
+"group":3}
 ,{
 	"node":	"daniisof.amaral",
 	"followers": ["mariajmduarte", "joanarocharaposo", "tiagoprata98", "antoniocptsl", "franciscojsrosa", "gce.neiist", "decasppereira", "maggieeee.12", "juaninha.silva", "definitelynotjota", "inesppereira99", "nadiasofia_f", "regouga", "nuno.martinss", "susmonteiro", "itsmenunoo", "pedro_lamego", "lucet15", "ldpted", "chinoips", "tiagoatfonseca", "freddydlima", "ritaprates", "goncalo_gil_simoes", "joaojtmarques", "ma_britess", "lexmaroco", "ay_no_sekai", "joanaaialves", "98migrocha", "inocaaa", "dtnunes", "_mrdominguez", "miana.nunes", "joaopinaa", "catarinalegria", "sanchabbarroso"],
-	"commonNumber": 37}
+	"commonNumber": 37,
+"group":3}
 ,{
 	"node":	"susmonteiro",
 	"followers": ["mariajmduarte", "heliojdomingos", "franciscojsrosa", "vascocruzrodrigues", "gce.neiist", "pedro_lamego", "juaninha.silva", "isabelsoares16", "inesppereira99", "joanarocharaposo", "98migrocha", "daniisof.amaral", "joanasteodoro", "jdcenoura", "joaojtmarques", "maggieeee.12", "afonsocrg", "josebartissol", "danielmaramalho", "inocaaa", "freddydlima", "ritaprates", "dcacho23", "catarinalegria", "nadiasofia_f", "marianaccintrao", "fiambredunicornio", "lucet15", "decasppereira", "lexmaroco", "ma_britess", "chinoips", "miguelbaptista98", "nuno.martinss", "rafa_noideas", "sanchabbarroso", "miana.nunes"],
-	"commonNumber": 37}
+	"commonNumber": 37,
+"group":3}
 ,{
 	"node":	"ldpted",
 	"followers": ["daniisof.amaral", "marianaccintrao", "gce.neiist", "joaopinaa", "rodrigo_df98", "inesppereira99", "thelusitana", "ineslacerdaa", "regouga", "lexmaroco", "martasaparicio", "sofiaaparicioofficial", "dcacho23", "amargaridaferro", "antoniocptsl", "ay_no_sekai", "pedro_lamego", "pakh.momo", "heliojdomingos", "danielsil30", "afonsocrg", "miana.nunes", "menapedreira", "isabelsoares16", "_mrdominguez", "tiagoprata98", "lucet15", "goncalo_gil_simoes", "tiagoatfonseca", "joanasteodoro", "joaojtmarques", "98migrocha", "senhor.lourenco", "itsmenunoo", "danielseara99", "carolinaavitorino", "dtnunes", "fiambredunicornio", "nixnij14", "ma_britess", "maggieeee.12", "inocaaa", "afonsobli", "definitelynotjota", "decasppereira"],
-	"commonNumber": 45}
+	"commonNumber": 45,
+"group":3}
 ,{
 	"node":	"jdcenoura",
 	"followers": ["mariajmduarte", "afonsocrg", "goncalo_gil_simoes", "catarinalegria", "maggieeee.12", "tiagoatfonseca", "nadiasofia_f", "franciscojsrosa", "pedro_lamego", "susmonteiro", "inocaaa", "danielmaramalho", "lucet15", "miana.nunes", "freddydlima", "ines_batina", "inesppereira99", "joanarocharaposo", "isabelsoares16", "definitelynotjota", "fredborlido", "miguelbaptista98", "r.velhinho", "pakh.momo", "ay_no_sekai", "mariaforjo", "ritacsjfernandes", "martaambrosioo", "_mrdominguez", "joaojtmarques", "franciscowmatos", "menapedreira", "fiambredunicornio", "carolinaavitorino", "dtnunes", "itsmenunoo", "joaopinaa", "98migrocha", "joanaaialves", "joao_barata98", "joanasteodoro", "nixnij14", "rodrigo.jt.mota", "madaaav", "agalambas", "regouga", "lexmaroco", "dcacho23", "heliojdomingos", "danielsil30", "afonsobli"],
-	"commonNumber": 51}
+	"commonNumber": 51,
+"group":3}
 ,{
 	"node":	"inesppereira99",
 	"followers": ["mariajmduarte", "artur.fortunato", "catarinalegria", "vascocruzrodrigues", "gce.neiist", "maggieeee.12", "agalambas", "juaninha.silva", "biscoito.fofinho", "danielmaramalho", "sanchabbarroso", "afonsocrg", "daniisof.amaral", "joaopinaa", "susmonteiro", "rodrigo_df98", "miguelbaptista98", "nuno.martinss", "rafa_noideas", "ldpted", "joanasteodoro", "franciscowmatos", "pedro_lamego", "carolinaavitorino", "afonsobli", "tiagoatfonseca", "marianaccintrao", "franciscojsrosa", "ay_no_sekai", "lexmaroco", "joao_barata98", "_mrdominguez", "goncalo_gil_simoes", "joaojtmarques", "itsmenunoo", "isabelsoares16", "regouga", "miana.nunes", "lucet15", "josebartissol", "nadiasofia_f", "fiambredunicornio", "98migrocha", "chinoips", "dtnunes", "freddydlima", "jdcenoura", "miguelsoaresoares"],
-	"commonNumber": 48}
+	"commonNumber": 48,
+"group":3}
 ,{
 	"node":	"martasaparicio",
 	"followers": ["ma_britess", "gce.neiist", "maggieeee.12", "ldpted", "inocaaa", "ines_batina", "martaambrosioo", "tiagoatfonseca", "ritaprates", "lexmaroco", "isabelsoares16", "josebartissol", "_mrdominguez", "pakh.momo", "joao_barata98", "menapedreira", "dcacho23", "goncalo_gil_simoes", "antoniocptsl", "miguelbaptista98", "senhor.lourenco", "pedro_lamego", "joaojtmarques", "danielsil30", "afonsobli", "ay_no_sekai", "98migrocha", "itsmenunoo", "joanafpribeiro", "heliojdomingos", "whyviidee", "sofiaaparicioofficial", "nadiasofia_f", "dtnunes", "joaopinaa", "regouga", "nesita97"],
-	"commonNumber": 37}
+	"commonNumber": 37,
+"group":3}
 ,{
 	"node":	"catarinalegria",
 	"followers": ["tiagoprata98", "ritaa.alves98", "afonsocrg", "inesppereira99", "franciscojsrosa", "agalambas", "vascocruzrodrigues", "jdcenoura", "carolinaavitorino", "gce.neiist", "marianapreal", "nuno.martinss", "_mrdominguez", "maggieeee.12", "amargaridaferro", "ma_britess", "nadiasofia_f", "regouga", "mariaforjo", "lexmaroco", "isabelsoares16", "tiago.barroso1", "heliojdomingos", "joaojtmarques", "lucet15", "chinoips", "ay_no_sekai", "pedro_lamego", "miana.nunes", "98migrocha", "itsmenunoo", "ritaprates", "inocaaa", "definitelynotjota", "joanaaialves", "freddydlima", "susmonteiro", "decasppereira", "dtnunes", "joaopinaa", "tiagoatfonseca", "daniisof.amaral"],
-	"commonNumber": 42}
+	"commonNumber": 42,
+"group":3}
 ,{
 	"node":	"freddydlima",
 	"followers": ["mariajmduarte", "gce.neiist", "maggieeee.12", "biscoito.fofinho", "goncalo_gil_simoes", "joaopinaa", "_mrdominguez", "nuno.martinss", "lexmaroco", "rodrigo_df98", "daniisof.amaral", "ay_no_sekai", "joaojtmarques", "afonsobli", "catarinalegria", "chinoips", "ma_britess", "marianaccintrao", "inocaaa", "susmonteiro", "miana.nunes", "sanchabbarroso", "jdcenoura", "joanarocharaposo", "itsmenunoo", "inesppereira99", "heliojdomingos", "isabelsoares16", "fiambredunicornio", "98migrocha", "lucet15", "dtnunes"],
-	"commonNumber": 32}
+	"commonNumber": 32,
+"group":3}
 ,{
 	"node":	"sanchabbarroso",
 	"followers": ["juaninha.silva", "ines_mcm", "vascocruzrodrigues", "mariajmduarte", "gce.neiist", "marianapreal", "josebartissol", "miguelbaptista98", "franciscojsrosa", "tiagoatfonseca", "joaopinaa", "joanasteodoro", "ines_batina", "inesppereira99", "carolinaavitorino", "ritaprates", "isabelsoares16", "maggieeee.12", "lexmaroco", "joaojtmarques", "afonsocrg", "rafa_noideas", "nadiasofia_f", "_mrdominguez", "heliojdomingos", "marianaccintrao", "dtnunes", "regouga", "freddydlima", "nuno.martinss", "fredborlido", "inocaaa", "joanaaialves", "ma_britess", "decasppereira", "definitelynotjota", "chinoips", "itsmenunoo", "pedro_lamego", "lucet15", "daniisof.amaral", "susmonteiro", "miana.nunes"],
-	"commonNumber": 43}
+	"commonNumber": 43,
+"group":3}
 ,{
 	"node":	"gce.neiist",
 	"followers": ["definitelynotjota", "thelusitana", "mariajmduarte", "sanchabbarroso", "vascocruzrodrigues", "pakh.momo", "r.velhinho", "martasaparicio", "pedro_lamego", "chinoips", "joanasteodoro", "franciscojsrosa", "joao_barata98", "inesppereira99", "catarinalegria", "miana.nunes", "joanafpribeiro", "regouga", "pedrogbcampos", "freddydlima", "lucet15", "decasppereira", "marrucho14", "heliojdomingos", "sofiaaparicioofficial", "menapedreira", "nadiasofia_f", "tiagoprata98", "husseingiva", "josebartissol", "susmonteiro", "carolinaavitorino", "daniisof.amaral", "rodrigo_df98", "isabelsoares16", "dtnunes", "itsmenunoo", "joaopinaa", "senhor.lourenco", "dcacho23", "marianaccintrao", "artur.fortunato", "98migrocha", "ldpted", "fiambredunicornio", "sinfoist"],
-	"commonNumber": 46}
+	"commonNumber": 46,
+"group":3}
 ,{
 	"node":	"r.velhinho",
 	"followers": ["danielmaramalho", "gce.neiist", "franciscojsrosa", "menapedreira", "lexmaroco", "rodrigo_df98", "ritacsjfernandes", "_mrdominguez", "miguelbaptista98", "husseingiva", "definitelynotjota", "ineslacerdaa", "itsmenunoo", "joaojtmarques", "dcacho23", "fiambredunicornio", "ay_no_sekai", "joanaaialves", "ritaprates", "afonsobli", "joao_barata98", "joaopinaa", "jdcenoura", "danielsil30", "nixnij14", "agalambas", "98migrocha", "heliojdomingos", "regouga"],
-	"commonNumber": 29}
+	"commonNumber": 29,
+"group":3}
 ,{
 	"node":	"inescnvdias",
 	"followers": ["dcaramujo", "santola_pedro", "jose.salbany", "salbunny98", "castanhas98", "thealex1406", "edu_tbraga", "carolina_fpf", "andre_nogueira23", "marta_narciso", "mafaldabjacinto", "rita_xarepe", "mariana_machado98", "afonsomcarvalho97"],
-	"commonNumber": 14}
+	"commonNumber": 14,
+"group":1}
 ,{
 	"node":	"danielmaramalho",
 	"followers": ["pedro_lamego", "r.velhinho", "vascocruzrodrigues", "maggieeee.12", "_mrdominguez", "definitelynotjota", "carolinaavitorino", "ma_britess", "inesppereira99", "regouga", "franciscojsrosa", "tiagoatfonseca", "alxsous", "chinoips", "afonsocrg", "inocaaa", "miana.nunes", "jdcenoura", "susmonteiro", "ines_batina", "mariaforjo", "isabelsoares16", "francisco.real.bentes", "joao_barata98", "antoniocptsl", "joaojtmarques", "joanasteodoro", "afonsobli", "ay_no_sekai", "ritaprates", "dcacho23", "98migrocha", "rodrigo_df98", "fredborlido", "tiagoprata98", "joanaaialves", "carolina_fpf", "miguelbaptista98", "lexmaroco", "joaopinaa", "agalambas", "_ana.goncalves_", "nadiasofia_f", "josebartissol", "madaaav", "dtnunes"],
-	"commonNumber": 46}
+	"commonNumber": 46,
+"group":3}
 ,{
 	"node":	"joanasteodoro",
 	"followers": ["vascocruzrodrigues", "gce.neiist", "juaninha.silva", "definitelynotjota", "sanchabbarroso", "susmonteiro", "inocaaa", "ldpted", "chinoips", "joaopinaa", "artur.fortunato", "miana.nunes", "inesppereira99", "lucet15", "tiagoatfonseca", "pedro_lamego", "franciscowmatos", "marrucho14", "pedrogbcampos", "thelusitana", "isabelsoares16", "decasppereira", "madaaav", "carolinaavitorino", "biscoito.fofinho", "joaojtmarques", "fiambredunicornio", "regouga", "fredborlido", "miguelbaptista98", "afonsocrg", "goncalo_gil_simoes", "itsmenunoo", "danielmaramalho", "franciscojsrosa", "ay_no_sekai", "menapedreira", "amargaridaferro", "agalambas", "afonsobli", "nadiasofia_f", "joao_barata98", "mariaforjo", "98migrocha", "martaambrosioo", "joanaaialves", "rodrigo.jt.mota", "jdcenoura", "dtnunes", "lexmaroco", "dcacho23", "josebartissol", "ritaprates"],
-	"commonNumber": 53}
+	"commonNumber": 53,
+"group":3}
 ,{
 	"node":	"ritacsjfernandes",
 	"followers": ["amargaridaferro", "artur.fortunato", "franciscowmatos", "josebartissol", "definitelynotjota", "itsmenunoo", "nixnij14", "tiagoprata98", "pedro_lamego", "agalambas", "r.velhinho", "pakh.momo", "joanaaialves", "jdcenoura", "rodrigo_df98", "ineslacerdaa", "carolinaavitorino", "biscoito.fofinho", "joao_barata98", "pedrogbcampos", "reynaud_filipe", "dcacho23", "menapedreira", "franciscojsrosa", "goncalo_gil_simoes", "mariaforjo", "ay_no_sekai", "martaambrosioo", "ritaprates", "98migrocha", "miguelbaptista98"],
-	"commonNumber": 31}
+	"commonNumber": 31,
+"group":3}
 ,{
 	"node":	"nadia_remtula",
 	"followers": ["andre_nogueira23", "mariaaacatita"],
-	"commonNumber": 2}
+	"commonNumber": 2,
+"group":5}
 ,{
 	"node":	"joaojtmarques",
 	"followers": ["ma_britess", "vascocruzrodrigues", "marianapreal", "maggieeee.12", "juaninha.silva", "nuno.martinss", "catarinalegria", "susmonteiro", "ldpted", "daniisof.amaral", "inocaaa", "sanchabbarroso", "freddydlima", "franciscojsrosa", "lucet15", "inesppereira99", "miana.nunes", "joanarocharaposo", "nixnij14", "chinoips", "lexmaroco", "isabelsoares16", "r.velhinho", "nadiasofia_f", "tiagoatfonseca", "afonsocrg", "98migrocha", "ay_no_sekai", "pakh.momo", "danielseara99", "joao_barata98", "pedro_lamego", "miguelbaptista98", "joanasteodoro", "afonsobli", "amargaridaferro", "fiambredunicornio", "_mrdominguez", "antoniocptsl", "dcacho23", "joaopinaa", "senhor.lourenco", "martasaparicio", "josebartissol", "danielmaramalho", "jdcenoura", "heliojdomingos", "decasppereira", "agalambas", "danielsil30", "regouga"],
-	"commonNumber": 51}
+	"commonNumber": 51,
+"group":3}
 ,{
 	"node":	"jessicafortedefaria",
 	"followers": ["francisco.real.bentes", "reynaud_filipe", "goncalo_gil_simoes", "nixnij14"],
-	"commonNumber": 4}
-,{
-	"node":	"joao_barata98",
-	"followers": ["mariajmduarte", "franciscojsrosa", "gce.neiist", "ritaprates", "chinoips", "maggieeee.12", "tiagoatfonseca", "juaninha.silva", "francisco.real.bentes", "miguelbaptista98", "inocaaa", "inesppereira99", "r.velhinho", "martasaparicio", "pakh.momo", "ritacsjfernandes", "joaojtmarques", "reynaud_filipe", "husseingiva", "tiagoprata98", "artur.fortunato", "isabelsoares16", "danielmaramalho", "pedrogbcampos", "thelusitana", "_mrdominguez"],
-	"commonNumber": 26}
+	"commonNumber": 4,
+"group":3}
 ,{
 	"node":	"ritaprates",
 	"followers": ["juaninha.silva", "joao_barata98", "nuno.martinss", "joaopinaa", "alxsous", "sanchabbarroso", "daniisof.amaral", "catarinalegria", "marianaccintrao", "lucet15", "susmonteiro", "chinoips", "inocaaa", "joanaaialves", "danielseara99", "martasaparicio", "danielsil30", "afonsocrg", "_mrdominguez", "fiambredunicornio", "r.velhinho", "tiagoatfonseca", "marrucho14", "ay_no_sekai", "definitelynotjota", "castanhas98", "pedro_lamego", "itsmenunoo", "isabelsoares16", "pedrogbcampos", "regouga", "menapedreira", "carolinaavitorino", "miguelbaptista98", "fredborlido", "ineslacerdaa", "decasppereira", "danielmaramalho", "madaaav", "husseingiva", "ritacsjfernandes", "amargaridaferro", "afonsobli", "tiagoprata98", "agalambas", "nixnij14", "dcacho23", "dtnunes", "franciscojsrosa", "joanasteodoro", "thelusitana", "nadiasofia_f", "_ana.goncalves_", "carolina_fpf", "lexmaroco", "ritaa.alves98", "mariaforjo", "martaambrosioo", "tiago.barroso1", "reynaud_filipe"],
-	"commonNumber": 60}
+	"commonNumber": 60,
+"group":3}
 ,{
 	"node":	"antoniocptsl",
 	"followers": ["vascocruzrodrigues", "daniisof.amaral", "maggieeee.12", "juaninha.silva", "ldpted", "inocaaa", "tiago.barroso1", "josebartissol", "amargaridaferro", "martasaparicio", "joanaaialves", "danielmaramalho", "danielseara99", "joaojtmarques", "pakh.momo", "pedro_lamego", "joaopinaa", "_mrdominguez", "senhor.lourenco", "98migrocha", "heliojdomingos", "dcacho23", "afonsocrg", "martaambrosioo", "isabelsoares16"],
-	"commonNumber": 25}
+	"commonNumber": 25,
+"group":3}
 ,{
 	"node":	"danielseara99",
 	"followers": ["mariajmduarte", "miguelbaptista98", "vascocruzrodrigues", "ma_britess", "tiagoatfonseca", "juaninha.silva", "ldpted", "inocaaa", "miana.nunes", "maggieeee.12", "ritaprates", "itsmenunoo", "carolinaavitorino", "heliojdomingos", "_mrdominguez", "senhor.lourenco", "98migrocha", "joaojtmarques", "dcacho23", "danielsil30", "antoniocptsl", "pedro_lamego", "decasppereira", "afonsocrg", "pakh.momo", "afonsobli", "isabelsoares16"],
-	"commonNumber": 27}
+	"commonNumber": 27,
+"group":3}
 ,{
 	"node":	"mariaforjo",
 	"followers": ["artur.fortunato", "lexmaroco", "danielmaramalho", "joanasteodoro", "nixnij14", "98migrocha", "agalambas", "decasppereira", "amargaridaferro", "reynaud_filipe", "joaopinaa", "dtnunes", "lucet15", "_ana.goncalves_", "pedrogbcampos", "nadiasofia_f", "catarinalegria", "fredborlido", "carolina_fpf", "husseingiva", "danielsil30", "definitelynotjota", "heliojdomingos", "ritaprates", "ritaa.alves98", "pedro_lamego", "afonsobli", "miguelbaptista98", "marrucho14", "tiagoatfonseca", "dcacho23", "marianaccintrao", "ineslacerdaa", "franciscojsrosa", "sofiaaparicioofficial", "menapedreira", "martaambrosioo", "regouga", "carolinaavitorino", "ritacsjfernandes", "ay_no_sekai", "joanaaialves", "itsmenunoo", "fiambredunicornio", "tiagoprata98", "jdcenoura", "franciscowmatos"],
-	"commonNumber": 47}
+	"commonNumber": 47,
+"group":3}
 ,{
 	"node":	"andre_rocha98",
 	"followers": ["salbunny98", "jose.salbany", "dcaramujo", "castanhas98", "agalambas", "andre_nogueira23"],
-	"commonNumber": 6}
+	"commonNumber": 6,
+"group":1}
 ,{
 	"node":	"marta_narciso",
 	"followers": ["maria.w.f", "andre_nogueira23", "salbunny98", "miguelsoaresoares", "dcaramujo", "francisco.real.bentes", "pedrogbcampos", "inacio.diogo98", "xemosby", "ines_gerardo", 
 		"mcdino98", "sofia_candeias", "mariana_machado98", "inescnvdias", "jose.salbany", "joaocosmelli", "castanhas98", "thealex1406", "rita_xarepe", "margarida99", "martin.goncalves", "marianalfsousa", "p.s.lyra", "tele.castro", "annushkavk"],
-	"commonNumber": 25}
+	"commonNumber": 25,
+"group":1}
 ,{
 	"node":	"katkat_twix",
 	"followers": ["edu_tbraga", "xemosby", "patriciag98", "mcdino98"],
-	"commonNumber": 4}
+	"commonNumber": 4,
+"group":1}
 ,{
 	"node":	"chengyu_163",
 	"followers": ["miguelsoaresoares", "martin.goncalves", "pedro.cruz28597", "castanhas98", "xyc_52", "afonsomcarvalho97", "mcdino98"],
-	"commonNumber": 7}
+	"commonNumber": 7,
+"group":1}
 ,{
 	"node":	"rodrigo.jt.mota",
 	"followers": ["joao_barata98", "joanasteodoro", "nixnij14", "amargaridaferro", "reynaud_filipe", "_ana.goncalves_", "pedrogbcampos", "fredborlido", "sinfoist", "nesita97", "afonsobli", "dcacho23", "ineslacerdaa", "sofiaaparicioofficial", "menapedreira", "itsmenunoo", "jdcenoura"],
-	"commonNumber": 17}
+	"commonNumber": 17,
+"group":3}
 ,{
 	"node":	"rodrigo_df98",
 	"followers": ["r.velhinho", "artur.fortunato", "lexmaroco", "joao_barata98", "danielmaramalho", "gce.neiist", "98migrocha", "maggieeee.12", "biscoito.fofinho", "amargaridaferro", "reynaud_filipe", "joaopinaa", "dtnunes", "ldpted", "francisco.real.bentes", "pedrogbcampos", "fredborlido", "husseingiva", "vascocruzrodrigues", "danielsil30", "definitelynotjota", "mariajmduarte", "heliojdomingos", "pedro_lamego", "afonsobli", "miguelbaptista98", "marrucho14", "tiagoatfonseca", "dcacho23", "marianaccintrao", "freddydlima", "menapedreira", "sofiaaparicioofficial", "martaambrosioo", "ritacsjfernandes", "carolinaavitorino", "inesppereira99", "ay_no_sekai", "itsmenunoo", "fiambredunicornio", "tiagoprata98", "franciscowmatos"],
-	"commonNumber": 42}
+	"commonNumber": 42,
+"group":3}
 ,{
 	"node":	"menapedreira",
 	"followers": ["r.velhinho", "mariaforjo", "artur.fortunato", "lexmaroco", "joao_barata98", "gce.neiist", "_mrdominguez", "joanasteodoro", "nixnij14", "josebartissol", "98migrocha", "maggieeee.12", "biscoito.fofinho", "amargaridaferro", "goncalo_gil_simoes", "reynaud_filipe", "dtnunes", "lucet15", "_ana.goncalves_", "ldpted", "pedrogbcampos", "nadiasofia_f", "fredborlido", "rodrigo.jt.mota", "thelusitana", "definitelynotjota", "heliojdomingos", "ritaprates", "inocaaa", "afonsobli", "miguelbaptista98", "marrucho14", "tiagoatfonseca", "dcacho23", "rodrigo_df98", "ineslacerdaa", "martasaparicio", "franciscojsrosa", "martaambrosioo", "regouga", "carolinaavitorino", "ritacsjfernandes", "ay_no_sekai", 
 		"joanaaialves", "itsmenunoo", "fiambredunicornio", "tiagoprata98", "jdcenoura", "franciscowmatos"],
-	"commonNumber": 49}
+	"commonNumber": 49,
+"group":3}
 ,{
 	"node":	"mariaaacatita",
 	"followers": ["andre_nogueira23", "jose.salbany", "martin.goncalves", "guilherme.ocarvalho", "marianaisidrodocarmo", "castanhas98", "salbunny98", "nadia_remtula"],
-	"commonNumber": 8}
+	"commonNumber": 8,
+"group":5}
 ,{
 	"node":	"carlotaferreira1",
 	"followers": ["cristinaprataruivo", "martajoana"],
-	"commonNumber": 2}
+	"commonNumber": 2,
+"group":4}
 ,{
 	"node":	"vsanto436",
 	"followers": ["mariafdbrito", "afonso0854", "ineespedro", "sara.espiritosanto.3"],
-	"commonNumber": 4}
+	"commonNumber": 4,
+"group":4}
 ,{
 	"node":	"blxbeatriz",
 	"followers": ["carolinalwx", "margarida__monteiro", "celinassousa", "carlosmiguelpt"],
-	"commonNumber": 4}
+	"commonNumber": 4,
+"group":5}
 ,{
 	"node":	"carolinalwx",
 	"followers": ["dtnunes", "nuno.martinss", "tiagomsaneves", "reynaud_filipe"],
-	"commonNumber": 4}
+	"commonNumber": 4,
+"group":5}
 ,{
 	"node":	"agalambas",
 	"followers": ["r.velhinho", "mariaforjo", "lexmaroco", "joao_barata98", "danielmaramalho", "afonsocrg", "joanasteodoro", "nixnij14", "josebartissol", "98migrocha", "amargaridaferro", "joaopinaa", "lucet15", "_ana.goncalves_", "nuno.martinss", "francisco.real.bentes", "catarinalegria", "carolina_fpf", "fredborlido", "joaojtmarques", "madaaav", "thelusitana", "danielsil30", "heliojdomingos", "ritaprates", "afonsobli", "miguelbaptista98", "marianapreal", "tiagoatfonseca", "andre_rocha98", "dcacho23", "ineslacerdaa", "franciscojsrosa", "regouga", "ritacsjfernandes", "miana.nunes", "inesppereira99", "ay_no_sekai", "joanaaialves", "itsmenunoo", "chinoips", "fiambredunicornio", "jdcenoura", "franciscowmatos", "juaninha.silva"],
-	"commonNumber": 45}
+	"commonNumber": 45,
+"group":3}
 ,{
 	"node":	"pedro.cruz28597",
 	"followers": ["chengyu_163", "xyc_52", "martin.goncalves", "miguelsoaresoares", "mcdino98"],
-	"commonNumber": 5}
+	"commonNumber": 5,
+"group":1}
 ,{
 	"node":	"nunonobrega98",
 	"followers": ["salbunny98", "rosinha4580", "marianaisidrodocarmo", "jose.salbany", "francisco.real.bentes", "castanhas98", "andre_nogueira23"],
-	"commonNumber": 7}
+	"commonNumber": 7,
+"group":5}
 ,{
 	"node":	"carlosmiguelpt",
 	"followers": ["carolinalwx", "margarida__monteiro", "celinassousa", "blxbeatriz"],
-	"commonNumber": 4}
+	"commonNumber": 4,
+"group":5}
 ,{
 	"node":	"celinassousa",
 	"followers": ["margarida__monteiro", "blxbeatriz", "tiagomsaneves", "carolinalwx", "carlosmiguelpt"],
-	"commonNumber": 5}
+	"commonNumber": 5,
+"group":5}
 ,{
 	"node":	"guilherme.ocarvalho",
 	"followers": ["matildecmelo", "mariaaacatita", "1inees3", "andre_nogueira23", "mcdino98", "antoniomendes208", "sofia_candeias", "miguelchorao34"],
-	"commonNumber": 8}
+	"commonNumber": 8,
+"group":5}
 ,{
 	"node":	"pedro.pacheco.735507",
 	"followers": ["petrony98", "valerianestarte"],
-	"commonNumber": 2}
+	"commonNumber": 2,
+"group":1}
 ,{
 	"node":	"madaaav",
 	"followers": ["lexmaroco", "joao_barata98", "joanafpribeiro", "whyviidee", "danielmaramalho", "isabelsoares16", "joanasteodoro", "nixnij14", "josebartissol", "98migrocha", "agalambas", "goncalo_gil_simoes", "dtnunes", "nadiasofia_f", "fredborlido", "husseingiva", "thelusitana", "nesita97", "heliojdomingos", "ritaprates", "afonsobli", "miguelbaptista98", 
 		"dcacho23", "franciscojsrosa", "regouga", "joanaaialves", "itsmenunoo", "fiambredunicornio", "jdcenoura", "ines_batina"],
-	"commonNumber": 30}
+	"commonNumber": 30,
+"group":3}
 ,{
 	"node":	"miguel_vladimiro_ferreira_",
 	"followers": [],
-	"commonNumber": 0}
+	"commonNumber": 0,
+"group":4}
 ,{
 	"node":	"p.s.lyra",
 	"followers": ["josebartissol", "mafaldabjacinto", "andre_nogueira23", "marisa_clourenco", "saraquel_campos", "miguelsoaresoares", "rita_sfernandes", "afonsomcarvalho97", "ines_gerardo", "mariana_machado98", "marta_narciso", "rita_xarepe", "marianalfsousa", "margarida_b_pereira"],
-	"commonNumber": 14}
+	"commonNumber": 14,
+"group":1}
 ,{
 	"node":	"martaambrosioo",
 	"followers": ["afonsobli", "juaninha.silva", "sofiaaparicioofficial", "itsmenunoo", "marrucho14", "fiambredunicornio", "fredborlido", "martasaparicio", "tiagoatfonseca", "nixnij14", "josebartissol", "pedro_lamego", "husseingiva", "regouga", "sinfoist", "ritaa.alves98", "decasppereira", "jdcenoura", "antoniocptsl", "joaopinaa", "pedrogbcampos", "menapedreira", "carolinaavitorino", "rodrigo_df98", "ritacsjfernandes", "98migrocha", "thelusitana", "joanasteodoro", "miguelbaptista98", "ineslacerdaa", "tiagoprata98", "dcacho23", "franciscojsrosa", "_ana.goncalves_", "carolina_fpf", "nadiasofia_f", "amargaridaferro", "lexmaroco", "ritaprates", "dtnunes", "joanaaialves"],
-	"commonNumber": 41}
+	"commonNumber": 41,
+"group":3}
 ,{
 	"node":	"bcustodio1539",
 	"followers": ["ricardopedro90", "ineespedro", "afonso0854", "sara.espiritosanto.3"],
-	"commonNumber": 4}
+	"commonNumber": 4,
+"group":4}
 ,{
 	"node":	"martin.goncalves",
 	"followers": ["xyc_52", "andre_nogueira23"],
-	"commonNumber": 2}
+	"commonNumber": 2,
+"group":1}
 ,{
 	"node":	"thelusitana",
 	"followers": ["artur.fortunato", "lexmaroco", "joao_barata98", "gce.neiist", "_mrdominguez", "joanasteodoro", "nixnij14", "josebartissol", "agalambas", "maggieeee.12", "amargaridaferro", "goncalo_gil_simoes", "dtnunes", "ldpted", "pakh.momo", "nadiasofia_f", "fredborlido", "carolina_fpf", "husseingiva", "vascocruzrodrigues", "madaaav", "definitelynotjota", "ritaprates", "inocaaa", "miguelbaptista98", "tiagoatfonseca", "dcacho23", "franciscojsrosa", "menapedreira", "martaambrosioo", "carolinaavitorino", "miana.nunes", "ay_no_sekai", "joanaaialves", "itsmenunoo", "tiagoprata98", "ines_batina"],
-	"commonNumber": 37}
+	"commonNumber": 37,
+"group":3}
 ,{
 	"node":	"ineslacerdaa",
 	"followers": ["r.velhinho", "mariaforjo", "lexmaroco", "joao_barata98", "whyviidee", "josebartissol", "nixnij14", "98migrocha", "agalambas", "decasppereira", "amargaridaferro", "goncalo_gil_simoes", "reynaud_filipe", "dtnunes", "_ana.goncalves_", "ldpted", "pedrogbcampos", "carolina_fpf", "fredborlido", "husseingiva", "rodrigo.jt.mota", "ritaprates", "pedro_lamego", "miguelbaptista98", "joaocosmelli", "dcacho23", "menapedreira", "martaambrosioo", "ritacsjfernandes", "joanaaialves", "itsmenunoo", "tiagoprata98"],
-	"commonNumber": 32}
+	"commonNumber": 32,
+"group":3}
 ,{
 	"node":	"artur.fortunato",
 	"followers": ["mariaforjo", "joao_barata98", "gce.neiist", "afonsocrg", "joanasteodoro", "josebartissol", "98migrocha", "decasppereira", "maggieeee.12", "biscoito.fofinho", "amargaridaferro", "goncalo_gil_simoes", "reynaud_filipe", "dtnunes", "lucet15", "pedrogbcampos", "fredborlido", "ma_britess", "husseingiva", "vascocruzrodrigues", "thelusitana", "danielsil30", "definitelynotjota", "heliojdomingos", "rosinha4580", "pedro_lamego", "afonsobli", "marrucho14", "dcacho23", "rodrigo_df98", "menapedreira", "ritacsjfernandes", "carolinaavitorino", "inesppereira99", "ay_no_sekai", "itsmenunoo", "tiagoprata98", "juaninha.silva"],
-	"commonNumber": 38}
+	"commonNumber": 38,
+"group":3}
 ,{
 	"node":	"ines_gerardo",
 	"followers": ["josebartissol", "mafaldabjacinto", "patriciag98", "datgoncalves", "antoniomendes208", "salbunny98", "miguelsoaresoares", "matildecmelo", "dcaramujo", "joanne__reis", "franciscadssantos", "xemosby", "sofia_candeias", "mariana_machado98", "edu_tbraga", "marta_narciso", "joaocosmelli", "thealex1406", "rita_xarepe", "margarida99", "inesppereira99", "marianalfsousa", "p.s.lyra", "joana.prates", "tele.castro", "margarida_b_pereira", "santola_pedro"],
-	"commonNumber": 27}
+	"commonNumber": 27,
+"group":1}
 ,{
 	"node":	"dtnunes",
 	"followers": ["juaninha.silva", "gce.neiist", "_mrdominguez", "joanarocharaposo", "ldpted", "ma_britess", "marianaccintrao", "sanchabbarroso", "artur.fortunato", "thelusitana", "chinoips", "catarinalegria", "miana.nunes", "daniisof.amaral", "inesppereira99", "inocaaa", "lucet15", "freddydlima", "lexmaroco"],
-	"commonNumber": 19}
+	"commonNumber": 19,
+"group":3}
 ,{
 	"node":	"heliojdomingos",
 	"followers": ["susmonteiro", "franciscojsrosa", "gce.neiist", "maggieeee.12", "tiago.barroso1", "juaninha.silva", "joanafpribeiro", "catarinalegria", "ldpted", "inocaaa", "miana.nunes", "ma_britess", "sanchabbarroso", "ines_batina", "rafa_noideas", "freddydlima", "nuno.martinss", "danielseara99", "carolinaavitorino", "fiambredunicornio", "decasppereira", "isabelsoares16", "tiagoatfonseca", "r.velhinho", "afonsocrg", "_mrdominguez", "joanaaialves", "pakh.momo"],
-	"commonNumber": 28}
+	"commonNumber": 28,
+"group":3}
 ,{
 	"node":	"franciscadssantos",
 	"followers": ["mariana_machado98", "matildecmelo", "ines_gerardo", "sofia_candeias"],
-	"commonNumber": 4}
+	"commonNumber": 4,
+"group":1}
 ,{
 	"node":	"vascocruzrodrigues",
 	"followers": ["nuno.martinss", "sanchabbarroso", "mariajmduarte", "miguelbaptista98", "thelusitana", "maggieeee.12", "fredborlido", "susmonteiro", "_mrdominguez", "franciscojsrosa", "inocaaa", "miana.nunes", "antoniocptsl", "isabelsoares16", "pedro_lamego", "regouga", "catarinalegria", "joaojtmarques", "lucet15", "ay_no_sekai", "rodrigo_df98", "afonsobli", "tiagoatfonseca", "joaopinaa", "nadiasofia_f", "danielmaramalho", "ma_britess", "sofiaaparicioofficial", "danielseara99", "inesppereira99", "98migrocha", "gce.neiist", "joanasteodoro", "afonsocrg", "artur.fortunato", "decasppereira", "definitelynotjota", "carolinaavitorino"],
-	"commonNumber": 38}
-,{
-	"node":	"maggieeee.12",
-	"followers": ["marrucho14", "thelusitana", "regouga", "lucet15", "mariajmduarte", "vascocruzrodrigues", "martasaparicio", "ay_no_sekai", "menapedreira", "rodrigo_df98", "daniisof.amaral", "biscoito.fofinho", "joanarocharaposo", "artur.fortunato", "danielmaramalho", "joao_barata98", "pedrogbcampos", "franciscojsrosa", "joaopinaa", "jdcenoura", "chinoips", "itsmenunoo", "inesppereira99", "nuno.martinss", "antoniocptsl", "tiago.barroso1", "isabelsoares16", "nadiasofia_f", "joaojtmarques", "catarinalegria", "heliojdomingos", "juaninha.silva", "freddydlima", "pakh.momo", "tiagoprata98", "carolinaavitorino", "lexmaroco", "miguelbaptista98", "amargaridaferro", "sanchabbarroso", "ldpted", "goncalo_gil_simoes", "susmonteiro", "98migrocha", "marianaccintrao", "miana.nunes", "inocaaa", "ma_britess", "decasppereira", "tiagoatfonseca", "_mrdominguez", "pedro_lamego", "danielseara99", "afonsocrg"],
-	"commonNumber": 54}
+	"commonNumber": 38,
+"group":3}
 ,{
 	"node":	"marianamfelino",
 	"followers": ["fiambredunicornio", "afonsobli"],
-	"commonNumber": 2}
+	"commonNumber": 2,
+"group":5}
 ,{
 	"node":	"joanne__reis",
 	"followers": ["mariana_machado98", "salbunny98", "saraquel_campos", "inesppereira99", "dcaramujo", "valerianestarte", "marianalfsousa", "castanhas98", "joana.prates", "andre_nogueira23"],
-	"commonNumber": 10}
+	"commonNumber": 10,
+"group":1}
 ,{
 	"node":	"nadiasofia_f",
 	"followers": ["mariaforjo", "lexmaroco", "joanafpribeiro", "danielmaramalho", "afonsocrg", "_mrdominguez", "alxsous", "joanasteodoro", "isabelsoares16", "josebartissol", "98migrocha", "gce.neiist", "decasppereira", "maggieeee.12", "amargaridaferro", "joaopinaa", "lucet15", "_ana.goncalves_", "pakh.momo", "nuno.martinss", "catarinalegria", "fredborlido", "carolina_fpf", "joaojtmarques", "husseingiva", "ma_britess", "vascocruzrodrigues", "madaaav", "thelusitana", "danielsil30", "definitelynotjota", "mariajmduarte", "heliojdomingos", "ritaprates", "pedro_lamego", "inocaaa", "afonsobli", "daniisof.amaral", "miguelbaptista98", "tiagoatfonseca", "dcacho23", "martasaparicio", "susmonteiro", "franciscojsrosa", "sofiaaparicioofficial", "menapedreira", "martaambrosioo", "regouga", "carolinaavitorino", "miana.nunes", "inesppereira99", "joanaaialves", "itsmenunoo", "chinoips", "sanchabbarroso", "jdcenoura", "ines_batina", "juaninha.silva"],
-	"commonNumber": 58}
+	"commonNumber": 58,
+"group":3}
 ,{
 	"node":	"abcrodrigues96",
 	"followers": ["andrecabaco", "nunoquintanilha", "olga_lourenco17", "nuno_pinelaa", "anasofia163"],
-	"commonNumber": 5}
+	"commonNumber": 5,
+"group":2}
 ,{
 	"node":	"diopinto6",
 	"followers": ["rodri.melopinto", "nuno_pinelaa", "ma_britess"],
-	"commonNumber": 3}
+	"commonNumber": 3,
+"group":2}
 ,{
 	"node":	"andrecabaco",
 	"followers": ["mariana_machado98", "rita_sfernandes", "dcaramujo", "nuno_pinelaa", "bia_carmo", "carlosajalmeida", "anasofia163", "abcrodrigues96"],
-	"commonNumber": 8}
+	"commonNumber": 8,
+"group":2}
 ,{
 	"node":	"whyviidee",
 	"followers": ["josebartissol", "nixnij14", "amargaridaferro", "goncalo_gil_simoes", "_ana.goncalves_", "pakh.momo", "husseingiva", "madaaav", "definitelynotjota", "dcacho23", "ineslacerdaa", "martasaparicio", "sofiaaparicioofficial", "ay_no_sekai", "itsmenunoo"],
-	"commonNumber": 15}
+	"commonNumber": 15,
+"group":3}
 ,{
 	"node":	"pakh.momo",
 	"followers": ["joao_barata98", "gce.neiist", "whyviidee", "afonsocrg", "_mrdominguez", "isabelsoares16", "nixnij14", "98migrocha", "decasppereira", "maggieeee.12", "amargaridaferro", "joaopinaa", "dtnunes", "antoniocptsl", "ldpted", "nuno.martinss", "francisco.real.bentes", "nadiasofia_f", "senhor.lourenco", "joaojtmarques", "danielseara99", "thelusitana", "danielsil30", "heliojdomingos", "pedro_lamego", "miguelbaptista98", "tiagoatfonseca", "dcacho23", "martasaparicio", "ritacsjfernandes", "carolinaavitorino", "miana.nunes", "ay_no_sekai", "jdcenoura", "juaninha.silva"],
-	"commonNumber": 35}
+	"commonNumber": 35,
+"group":3}
 ,{
 	"node":	"joanaaialves",
 	"followers": ["r.velhinho", "mariaforjo", "lexmaroco", "joao_barata98", "joanafpribeiro", "danielmaramalho", "_mrdominguez", "alxsous", "joanasteodoro", "nixnij14", "isabelsoares16", "josebartissol", "98migrocha", "agalambas", "decasppereira", "amargaridaferro", "goncalo_gil_simoes", "reynaud_filipe", "joaopinaa", "dtnunes", "lucet15", "_ana.goncalves_", "antoniocptsl", "nuno.martinss", "nadiasofia_f", "catarinalegria", "fredborlido", "carolina_fpf", "husseingiva", "madaaav", "thelusitana", "danielsil30", "heliojdomingos", "ritaprates", "ritaa.alves98", "pedro_lamego", "inocaaa", "afonsobli", "daniisof.amaral", "miguelbaptista98", "marrucho14", "tiagoatfonseca", "dcacho23", "marianaccintrao", "ineslacerdaa", "franciscojsrosa", "menapedreira", "martaambrosioo", "regouga", "carolinaavitorino", "ritacsjfernandes", "tiago.barroso1", "ay_no_sekai", "miana.nunes", "itsmenunoo", "chinoips", "tiagoprata98", "fiambredunicornio", "sanchabbarroso", "jdcenoura"],
-	"commonNumber": 60}
+	"commonNumber": 60,
+"group":3}
 ,{
 	"node":	"franciscowmatos",
 	"followers": ["mariaforjo", "joao_barata98", "_mrdominguez", "isabelsoares16", "joanasteodoro", "josebartissol", "98migrocha", "agalambas", "amargaridaferro", "dtnunes", "fredborlido", "definitelynotjota", "afonsobli", "dcacho23", "rodrigo_df98", "marianaccintrao", "menapedreira", "regouga", "carolinaavitorino", "ritacsjfernandes", "tiago.barroso1", "inesppereira99", "ay_no_sekai", "itsmenunoo", "fiambredunicornio", "jdcenoura"],
-	"commonNumber": 26}
+	"commonNumber": 26,
+"group":3}
 ,{
 	"node":	"carolinaavitorino",
 	"followers": ["mariaforjo", "artur.fortunato", "lexmaroco", "joao_barata98", "danielmaramalho", "gce.neiist", "afonsocrg", "_mrdominguez", "isabelsoares16", "joanasteodoro", "nixnij14", "josebartissol", "98migrocha", "decasppereira", "maggieeee.12", "biscoito.fofinho", "amargaridaferro", "goncalo_gil_simoes", "reynaud_filipe", "joaopinaa", "dtnunes", "lucet15", "ldpted", "pakh.momo", "pedrogbcampos", "nadiasofia_f", "catarinalegria", "fredborlido", "ma_britess", "husseingiva", "vascocruzrodrigues", "danielseara99", "thelusitana", "definitelynotjota", "mariajmduarte", "heliojdomingos", "ritaprates", "pedro_lamego", "inocaaa", "afonsobli", "marrucho14", "tiagoatfonseca", "dcacho23", "rodrigo_df98", "marianaccintrao", "franciscojsrosa", "menapedreira", "martaambrosioo", "ritacsjfernandes", "miana.nunes", "inesppereira99", "ay_no_sekai", "joanaaialves", "itsmenunoo", "fiambredunicornio", "sanchabbarroso", "jdcenoura", "ines_batina", "franciscowmatos"],
-	"commonNumber": 59}
+	"commonNumber": 59,
+"group":3}
 ,{
 	"node":	"senhor.lourenco",
 	"followers": ["gce.neiist", "afonsocrg", "isabelsoares16", "98migrocha", "biscoito.fofinho", "dtnunes", "antoniocptsl", "ldpted", "pakh.momo", "joaojtmarques", "danielseara99", "pedro_lamego", "afonsobli", "dcacho23", "martasaparicio", "tiago.barroso1", "ay_no_sekai", "itsmenunoo"],
-	"commonNumber": 18}
+	"commonNumber": 18,
+"group":3}
 ,{
 	"node":	"madalenakuma",
 	"followers": ["dcaramujo", "ana.caf"],
-	"commonNumber": 2}
+	"commonNumber": 2,
+"group":5}
 ,{
 	"node":	"afonsocrg",
 	"followers": ["artur.fortunato", "lexmaroco", "danielmaramalho", "_mrdominguez", "isabelsoares16", "joanasteodoro", "josebartissol", "98migrocha", "agalambas", "decasppereira", "maggieeee.12", "amargaridaferro", "joaopinaa", "antoniocptsl", "ldpted", "pakh.momo", "ines_mcm", "nadiasofia_f", "senhor.lourenco", "catarinalegria", "ma_britess", "joaojtmarques", "vascocruzrodrigues", "danielseara99", "danielsil30", "heliojdomingos", "ritaprates", "pedro_lamego", "miguelbaptista98", "tiagoatfonseca", "dcacho23", "susmonteiro", "franciscojsrosa", "carolinaavitorino", "miana.nunes", "inesppereira99", "chinoips", "sanchabbarroso", "jdcenoura"],
-	"commonNumber": 39}
+	"commonNumber": 39,
+"group":3}
 ,{
 	"node":	"xemosby",
 	"followers": ["mariana_machado98", "miguelsoaresoares", "edu_tbraga", "katkat_twix", "dcaramujo", "marta_narciso", "joaocosmelli", "castanhas98", "tele.castro", "ines_gerardo", "santola_pedro"],
-	"commonNumber": 11}
+	"commonNumber": 11,
+"group":1}
 ,{
 	"node":	"tiagoprata98",
 	"followers": ["mariaforjo", "artur.fortunato", "lexmaroco", "joao_barata98", "danielmaramalho", "gce.neiist", "josebartissol", "nixnij14", "98migrocha", "decasppereira", "maggieeee.12", "amargaridaferro", "_ana.goncalves_", "ldpted", "ines_mcm", "catarinalegria", "carolina_fpf", "ma_britess", "husseingiva", "thelusitana", "danielsil30", "definitelynotjota", "mariajmduarte", "ritaprates", "pedro_lamego", "inocaaa", "daniisof.amaral", "miguelbaptista98", "marrucho14", "dcacho23", "rodrigo_df98", "ineslacerdaa", "menapedreira", "martaambrosioo", "ritacsjfernandes", "ay_no_sekai", "joanaaialves"],
-	"commonNumber": 37}
+	"commonNumber": 37,
+"group":3}
 ,{
 	"node":	"joao_barata98",
 	"followers": ["r.velhinho", "artur.fortunato", "lexmaroco", "danielmaramalho", "gce.neiist", "_mrdominguez", "isabelsoares16", "joanasteodoro", "nixnij14", "josebartissol", "98migrocha", "agalambas", "maggieeee.12", "amargaridaferro", "goncalo_gil_simoes", "reynaud_filipe", "joaopinaa", "_ana.goncalves_", "pakh.momo", "francisco.real.bentes", "pedrogbcampos", "carolina_fpf", "fredborlido", "joaojtmarques", "husseingiva", "rodrigo.jt.mota", "madaaav", "thelusitana", "danielsil30", "mariajmduarte", "heliojdomingos", "ritaprates", "inocaaa", "afonsobli", "miguelbaptista98", "tiagoatfonseca", "dcacho23", "rodrigo_df98", "ineslacerdaa", "martasaparicio", "franciscojsrosa", "menapedreira", "regouga", "carolinaavitorino", "ritacsjfernandes", "inesppereira99", "ay_no_sekai", "joanaaialves", "itsmenunoo", "chinoips", "tiagoprata98", "fiambredunicornio", "jdcenoura", "franciscowmatos", "juaninha.silva"],
-	"commonNumber": 55}
+	"commonNumber": 55,
+"group":3}
 ,{
 	"node":	"j.diogotavares",
 	"followers": ["joserafaeltavares", "ineespedro"],
-	"commonNumber": 2}
+	"commonNumber": 2,
+"group":5}
 ,{
 	"node":	"biscoito.fofinho",
 	"followers": ["artur.fortunato", "lexmaroco", "joanasteodoro", "98migrocha", "maggieeee.12", "amargaridaferro", "goncalo_gil_simoes", "lucet15", "pedrogbcampos", "senhor.lourenco", "fredborlido", "afonsobli", "dcacho23", "rodrigo_df98", "marianaccintrao", "freddydlima", "franciscojsrosa", "menapedreira", "carolinaavitorino", "ritacsjfernandes", "miana.nunes", "inesppereira99", "ay_no_sekai", "itsmenunoo", "fiambredunicornio"],
-	"commonNumber": 25}
+	"commonNumber": 25,
+"group":3}
 ,{
 	"node":	"reynaud_filipe",
 	"followers": ["mariaforjo", "artur.fortunato", "joao_barata98", "josebartissol", "98migrocha", "decasppereira", "carolinalwx", "amargaridaferro", "goncalo_gil_simoes", "_ana.goncalves_", "pedrogbcampos", "fredborlido", "husseingiva", "rodrigo.jt.mota", "definitelynotjota", "ritaprates", "afonsobli", "marrucho14", "dcacho23", "rodrigo_df98", "ineslacerdaa", "menapedreira", "ritacsjfernandes", "carolinaavitorino", "tiago.barroso1", "ay_no_sekai", "joanaaialves", "itsmenunoo", "chinoips", "jessicafortedefaria"],
-	"commonNumber": 30}
+	"commonNumber": 30,
+"group":3}
 ,{
 	"node":	"saraquel_campos",
 	"followers": ["miguelsoaresoares", "jose.salbany", "inesppereira99", "joanne__reis", "valerianestarte", "p.s.lyra", "castanhas98", "joana.prates", "andre_nogueira23", "mcdino98"],
-	"commonNumber": 10}
+	"commonNumber": 10,
+"group":1}
 ,{
 	"node":	"1inees3",
 	"followers": ["inespinta", "rosinha4580", "guilherme.ocarvalho", "joaocosmelli", "jp_anastacio_", "josebartissol", "catariinacnunes", "tele.castro", "andre_nogueira23", "ana.caf", "miguelchorao34"],
-	"commonNumber": 11}
+	"commonNumber": 11,
+"group":1}
 ,{
 	"node":	"valerianestarte",
 	"followers": ["saraquel_campos", "pedro.pacheco.735507", "mcdino98", "martin.goncalves", "joanne__reis", "marianalfsousa", "castanhas98", "margarida99"],
-	"commonNumber": 8}
+	"commonNumber": 8,
+"group":1}
 ,{
 	"node":	"marianaisidrodocarmo",
 	"followers": ["salbunny98", "nunonobrega98", "jose.salbany", "mariaaacatita", "mafaldabjacinto", "castanhas98", "andre_nogueira23", "afonsomcarvalho97"],
-	"commonNumber":8}
+	"commonNumber":8,
+"group":5}
 ,{
 	"node":	"ritaa.alves98",
 	"followers": ["ritaprates", "martaambrosioo", "mariaforjo", "joanaaialves", "itsmenunoo", "catarinalegria", "fredborlido"],
-	"commonNumber": 7}
+	"commonNumber": 7,
+"group":5}
 ,{
 	"node":	"decasppereira",
 	"followers": ["mariaforjo", "artur.fortunato", "lexmaroco", "gce.neiist", "afonsocrg", "_mrdominguez", "alxsous", "joanasteodoro", "nixnij14", "isabelsoares16", "josebartissol", "98migrocha", "maggieeee.12", "amargaridaferro", "goncalo_gil_simoes", "reynaud_filipe", "joaopinaa", "dtnunes", "lucet15", "ldpted", "pakh.momo", "nuno.martinss", "pedrogbcampos", "ines_mcm", "nadiasofia_f", "catarinalegria", "joaojtmarques", "ma_britess", "vascocruzrodrigues", "danielseara99", "danielsil30", "definitelynotjota", "heliojdomingos", "ritaprates", "pedro_lamego", "inocaaa", "afonsobli", "daniisof.amaral", "marianapreal", "tiagoatfonseca", "dcacho23", "marianaccintrao", "ineslacerdaa", "susmonteiro", "franciscojsrosa", "sofiaaparicioofficial", "martaambrosioo", "regouga", "carolinaavitorino", "miana.nunes", "ay_no_sekai", "joanaaialves", "itsmenunoo", "chinoips", "tiagoprata98", "joanarocharaposo", "fiambredunicornio", "sanchabbarroso", "ines_batina", "juaninha.silva"],
-	"commonNumber": 60}
+	"commonNumber": 60,
+"group":3}
 ,{
 	"node":	"miguelchorao34",
 	"followers": ["matildecmelo", "guilherme.ocarvalho"],
-	"commonNumber": 2}
+	"commonNumber": 2,
+"group":5}
 ,{
 	"node":	"fiambredunicornio",
 	"followers": ["r.velhinho", "mariaforjo", "lexmaroco", "joao_barata98", "gce.neiist", "_mrdominguez", "alxsous", "joanasteodoro", "nixnij14", "isabelsoares16", "josebartissol", "98migrocha", "agalambas", "decasppereira", "biscoito.fofinho", "amargaridaferro", "joaopinaa", "marianamfelino", "dtnunes", "lucet15", "ldpted", "nuno.martinss", "pedrogbcampos", "fredborlido", "joaojtmarques", "ma_britess", "madaaav", "danielsil30", "heliojdomingos", "ritaprates", "afonsobli", "marrucho14", "dcacho23", "rodrigo_df98", "marianaccintrao", "freddydlima", "susmonteiro", "menapedreira", "martaambrosioo", "regouga", "carolinaavitorino", "miana.nunes", "inesppereira99", "ay_no_sekai", "joanaaialves", "itsmenunoo", "chinoips", "jdcenoura", "ines_batina", "franciscowmatos"],
-	"commonNumber": 50}
+	"commonNumber": 50,
+"group":3}
 ,{
 	"node":	"nesita97",
 	"followers": ["dtnunes", "regouga", "joanafpribeiro", "_mrdominguez", "itsmenunoo", "fredborlido", "98migrocha", "rodrigo.jt.mota", "madaaav", "martasaparicio", "ines_batina", "sofiaaparicioofficial"],
-	"commonNumber": 12}
+	"commonNumber": 12,
+"group":3}
 ,{
 	"node":	"husseingiva",
 	"followers": ["r.velhinho", "mariaforjo", "artur.fortunato", "joao_barata98", "gce.neiist", "whyviidee", "josebartissol", "nixnij14", "98migrocha", "amargaridaferro", "goncalo_gil_simoes", "reynaud_filipe", "joaopinaa", "nadiasofia_f", "fredborlido", "madaaav", "thelusitana", "definitelynotjota", "heliojdomingos", "ritaprates", "pedro_lamego", "miguelbaptista98", "marrucho14", "dcacho23", "rodrigo_df98", "ineslacerdaa", "martaambrosioo", "regouga", "carolinaavitorino", "ay_no_sekai", "joanaaialves", "itsmenunoo", "tiagoprata98"],
-	"commonNumber": 33}
+	"commonNumber": 33,
+"group":3}
 ,{
 	"node":	"isabelsoares16",
 	"followers": ["lexmaroco", "joao_barata98", "danielmaramalho", "gce.neiist", "afonsocrg", "_mrdominguez", "joanasteodoro", "josebartissol", "98migrocha", "decasppereira", "maggieeee.12", "amargaridaferro", "dtnunes", "lucet15", "antoniocptsl", "ldpted", "pakh.momo", "nuno.martinss", "nadiasofia_f", "senhor.lourenco", "catarinalegria", "vascocruzrodrigues", "joaojtmarques", "danielseara99", "madaaav", "danielsil30", "heliojdomingos", "ritaprates", "pedro_lamego", "inocaaa", "afonsobli", "marrucho14", "tiagoatfonseca", "dcacho23", "freddydlima", "martasaparicio", "susmonteiro", "franciscojsrosa", "regouga", "carolinaavitorino", "tiago.barroso1", "miana.nunes", "inesppereira99", "ay_no_sekai", "joanaaialves", "itsmenunoo", "chinoips", "joanarocharaposo", "fiambredunicornio", "sanchabbarroso", "jdcenoura", "franciscowmatos"],
-	"commonNumber": 52}
+	"commonNumber": 52,
+"group":3}
 ,{
 	"node":	"sinfoist",
 	"followers": ["nixnij14", "gce.neiist", "98migrocha", "joaopinaa", "dtnunes", "rodrigo.jt.mota", "pedro_lamego", "martaambrosioo", "regouga"],
-	"commonNumber": 9}
+	"commonNumber": 9,
+"group":3}
 ,{
 	"node":	"tiago.barroso1",
 	"followers": ["_mrdominguez", "isabelsoares16", "98migrocha", "maggieeee.12", "amargaridaferro", "joaopinaa", "reynaud_filipe", "antoniocptsl", "senhor.lourenco", "catarinalegria", "danielsil30", "definitelynotjota", "heliojdomingos", "ritaprates", "afonsobli", "tiagoatfonseca", "dcacho23", "miana.nunes", "ay_no_sekai", "joanaaialves", "itsmenunoo", "franciscowmatos"],
-	"commonNumber": 22}
+	"commonNumber": 22,
+"group":3}
 ,{
 	"node":	"_mrdominguez",
 	"followers": ["r.velhinho", "lexmaroco", "joao_barata98", "danielmaramalho", "afonsocrg", "alxsous", "isabelsoares16", "josebartissol", "98migrocha", "decasppereira", "maggieeee.12", "joaopinaa", "dtnunes", "lucet15", "antoniocptsl", "ldpted", "pakh.momo", "nuno.martinss", "nadiasofia_f", "catarinalegria", "vascocruzrodrigues", "joaojtmarques", "danielseara99", "thelusitana", "nesita97", "danielsil30", "mariajmduarte", "heliojdomingos", "ritaprates", "pedro_lamego", "inocaaa", "afonsobli", "daniisof.amaral", "marianapreal", "tiagoatfonseca", "dcacho23", "freddydlima", "martasaparicio", "franciscojsrosa", "menapedreira", "rafa_noideas", "regouga", "carolinaavitorino", "tiago.barroso1", "miana.nunes", "inesppereira99", "ay_no_sekai", "joanaaialves", "itsmenunoo", "chinoips", "fiambredunicornio", "sanchabbarroso", "jdcenoura", "ines_batina", "franciscowmatos", "juaninha.silva"],
-	"commonNumber": 56}
+	"commonNumber": 56,
+"group":3}
 ,{
 	"node":	"josebartissol",
 	"followers": ["afonsocrg", "isabelsoares16", "madaaav", "ineslacerdaa", "ritacsjfernandes", "carolinaavitorino", "joanaaialves", "p.s.lyra", "franciscowmatos", "artur.fortunato", "danielmaramalho", "98migrocha", "decasppereira", "_ana.goncalves_", "fredborlido", "husseingiva", "thelusitana", "ines_gerardo", "mariajmduarte", "miguelbaptista98", "marrucho14", "tiagoatfonseca", "dcacho23", "tiagoprata98", "sanchabbarroso", "joana.prates", "lexmaroco", "joao_barata98", "gce.neiist", "whyviidee", "joanasteodoro", "agalambas", "joaopinaa", "nadiasofia_f", "ma_britess", "inocaaa", "menapedreira", "regouga", "ay_no_sekai", "chinoips", "joanafpribeiro", "_mrdominguez", "nixnij14", "mafaldabjacinto", "amargaridaferro", "reynaud_filipe", "dtnunes", "antoniocptsl", "francisco.real.bentes", "joaojtmarques", "danielsil30", "heliojdomingos", "mariana_machado98", "pedro_lamego", "maximus_triglicemicos", "1inees3", "martasaparicio", "susmonteiro", "franciscojsrosa", "margarida99", "sofiaaparicioofficial", "martaambrosioo", "inesppereira99", "itsmenunoo", "fiambredunicornio"],
-	"commonNumber": 65}
+	"commonNumber": 65,
+"group":1}
 ,{
 	"node":	"goncalo_gil_simoes",
 	"followers": ["artur.fortunato", "lexmaroco", "joao_barata98", "joanafpribeiro", "whyviidee", "joanasteodoro", "98migrocha", "decasppereira", "maggieeee.12", "biscoito.fofinho", "amargaridaferro", "reynaud_filipe", "joaopinaa", "dtnunes", "lucet15", "ldpted", "pedrogbcampos", "ma_britess", "husseingiva", "madaaav", "thelusitana", "danielsil30", "mariajmduarte", "heliojdomingos", "pedro_lamego", "afonsobli", "daniisof.amaral", "miguelbaptista98", "marrucho14", "marianaccintrao", "freddydlima", "ineslacerdaa", "martasaparicio", "franciscojsrosa", "sofiaaparicioofficial", "menapedreira", "ritacsjfernandes", "carolinaavitorino", "miana.nunes", "inesppereira99", "ay_no_sekai", "joanaaialves", "chinoips", "joanarocharaposo", "jessicafortedefaria", "jdcenoura"],
-	"commonNumber": 46}
+	"commonNumber": 46,
+"group":3}
 ,{
 	"node":	"nixnij14",
 	"followers": ["r.velhinho", "mariaforjo", "lexmaroco", "joao_barata98", "whyviidee", "josebartissol", "98migrocha", "agalambas", "decasppereira", "amargaridaferro", "_ana.goncalves_", "ldpted", "pakh.momo", "carolina_fpf", "joaojtmarques", "husseingiva", "rodrigo.jt.mota", "madaaav", "thelusitana", "sinfoist", "ritaprates", "afonsobli", "miguelbaptista98", "dcacho23", "ineslacerdaa", "menapedreira", "sofiaaparicioofficial", "martaambrosioo", "carolinaavitorino", "ritacsjfernandes", "ay_no_sekai", "joanaaialves", "itsmenunoo", "fiambredunicornio", "tiagoprata98", "jessicafortedefaria", "jdcenoura"],
-	"commonNumber": 37}
+	"commonNumber": 37,
+"group":3}
 ,{
 	"node":	"pedrogbcampos",
 	"followers": ["mariaforjo", "artur.fortunato", "joao_barata98", "gce.neiist", "joanasteodoro", "98migrocha", "decasppereira", "maggieeee.12", "biscoito.fofinho", "goncalo_gil_simoes", "reynaud_filipe", "rodrigo.jt.mota", "ritaprates", "afonsobli", "marta_narciso", "dcacho23", "rodrigo_df98", "ineslacerdaa", "menapedreira", "martaambrosioo", "ritacsjfernandes", "carolinaavitorino", "ay_no_sekai", "chinoips", "fiambredunicornio"],
-	"commonNumber": 25}
+	"commonNumber": 25,
+"group":3}
 ,{
 	"node":	"sofiaaparicioofficial",
 	"followers": ["mariaforjo", "lexmaroco", "whyviidee", "gce.neiist", "josebartissol", "nixnij14", "decasppereira", "amargaridaferro", "goncalo_gil_simoes", "dtnunes", "ldpted", "nadiasofia_f", "vascocruzrodrigues", "rodrigo.jt.mota", "nesita97", "danielsil30", "afonsobli", "miguelbaptista98", "marrucho14", "dcacho23", "rodrigo_df98", "martasaparicio", "franciscojsrosa", "martaambrosioo", "regouga", "ines_batina"],
-	"commonNumber": 26}
+	"commonNumber": 26,
+"group":3}
 ,{
 	"node":	"ana.caf",
 	"followers": ["madalenakuma", "inespinta", "rosinha4580", "martin.goncalves", "carolinaaalves17", "jp_anastacio_", "catariinacnunes", "1inees3", "andre_nogueira23", "afonsomcarvalho97", "andreeira"],
-	"commonNumber": 11}
+	"commonNumber": 11,
+"group":5}
 ,{
 	"node":	"jp_anastacio_",
 	"followers": ["inespinta", "rosinha4580", "carolinaaalves17", "ana.caf", "1inees3", "andre_nogueira23", "afonsomcarvalho97", "andreeira", "bia_carmo"],
-	"commonNumber": 9}
+	"commonNumber": 9,
+"group":5}
 ,{
 	"node":	"joana.prates",
 	"followers": ["saraquel_campos", "joanne__reis", "rita_xarepe", "josebartissol", "marianalfsousa", "mafaldabjacinto", "ines_gerardo", "margarida99"],
-	"commonNumber": 8}
+	"commonNumber": 8,
+"group":1}
 ,{
 	"node":	"rosinha4580",
 	"followers": ["inespinta", "nunonobrega98", "artur.fortunato", "ana.caf", "jp_anastacio_", "catariinacnunes", "1inees3", "andre_nogueira23", "afonsomcarvalho97", "andreeira"],
-	"commonNumber": 10}
+	"commonNumber": 10,
+"group":5}
 ,{
 	"node":	"joaocosmelli",
 	"followers": ["matildecmelo", "edu_tbraga", "dcaramujo", "marta_narciso", "xemosby", "1inees3", "ineslacerdaa", "tele.castro", "thealex1406", "ines_gerardo", "antoniomendes208", "sofia_candeias", "marisa_clourenco"],
-	"commonNumber": 13}
+	"commonNumber": 13,
+"group":1}
 ,{
 	"node":	"pedro_lamego",
 	"followers": ["mariaforjo", "artur.fortunato", "lexmaroco", "danielmaramalho", "gce.neiist", "afonsocrg", "_mrdominguez", "alxsous", "joanasteodoro", "isabelsoares16", "josebartissol", "98migrocha", "decasppereira", "maggieeee.12", "amargaridaferro", "goncalo_gil_simoes", "joaopinaa", "dtnunes", "lucet15", "antoniocptsl", "ldpted", "pakh.momo", "nuno.martinss", "ines_mcm", "nadiasofia_f", "senhor.lourenco", "catarinalegria", "ma_britess", "joaojtmarques", "husseingiva", "vascocruzrodrigues", "danielseara99", "sinfoist", "danielsil30", "definitelynotjota", "mariajmduarte", "heliojdomingos", "ritaprates", "inocaaa", "daniisof.amaral", "miguelbaptista98", "marianapreal", "tiagoatfonseca", "dcacho23", "rodrigo_df98", "marianaccintrao", "ineslacerdaa", "martasaparicio", "susmonteiro", "franciscojsrosa", "martaambrosioo", "regouga", "carolinaavitorino", "ritacsjfernandes", "miana.nunes", "inesppereira99", "ay_no_sekai", "joanaaialves", "itsmenunoo", "chinoips", "tiagoprata98", "joanarocharaposo", "sanchabbarroso", "jdcenoura", "ines_batina", "juaninha.silva"],
-	"commonNumber": 66}
+	"commonNumber": 66,
+"group":3}
 ,{
 	"node":	"chinoips",
 	"followers": ["lexmaroco", "joao_barata98", "danielmaramalho", "gce.neiist", "afonsocrg", "_mrdominguez", "alxsous", "joanasteodoro", "isabelsoares16", "josebartissol", "98migrocha", "agalambas", "decasppereira", "maggieeee.12", "goncalo_gil_simoes", "reynaud_filipe", "dtnunes", "lucet15", "nuno.martinss", "pedrogbcampos", "ines_mcm", "nadiasofia_f", "catarinalegria", "ma_britess", "joaojtmarques", "definitelynotjota", "mariajmduarte", "ritaprates", "pedro_lamego", "inocaaa", "afonsobli", "daniisof.amaral", "miguelbaptista98", "tiagoatfonseca", "marianaccintrao", "freddydlima", "franciscojsrosa", "susmonteiro", "miana.nunes", "inesppereira99", "ay_no_sekai", "joanaaialves", "itsmenunoo", "fiambredunicornio", "sanchabbarroso"],
-	"commonNumber": 45}
+	"commonNumber": 45,
+"group":3}
 ,{
 	"node":	"rafa_noideas",
 	"followers": ["heliojdomingos", "inocaaa", "miana.nunes", "inesppereira99", "nuno.martinss", "carolinaaalves17", "_mrdominguez", "sanchabbarroso", "susmonteiro"],
-	"commonNumber": 9}
+	"commonNumber": 9,
+"group":3}
 ,{
 	"node":	"nuno.martinss",
 	"followers": ["lexmaroco", "_mrdominguez", "isabelsoares16", "98migrocha", "agalambas", "carolinalwx", "decasppereira", "maggieeee.12", "amargaridaferro", "joaopinaa", "lucet15", "pakh.momo", "ines_mcm", "nadiasofia_f", "catarinalegria", "carolina_fpf", "fredborlido", "joaojtmarques", "ma_britess", "vascocruzrodrigues", "danielsil30", "mariajmduarte", "heliojdomingos", "ritaprates", "pedro_lamego", "inocaaa", "daniisof.amaral", "tiagoatfonseca", "marianaccintrao", "freddydlima", "susmonteiro", "rafa_noideas", "regouga", "miana.nunes", "inesppereira99", "ay_no_sekai", "joanaaialves", "itsmenunoo", "chinoips", "fiambredunicornio", "sanchabbarroso"],
-	"commonNumber": 41}
+	"commonNumber": 41,
+"group":3}
 ,{
 	"node":	"ines_batina",
 	"followers": ["lexmaroco", "joanafpribeiro", "danielmaramalho", "_mrdominguez", "98migrocha", "decasppereira", "amargaridaferro", "joaopinaa", "lucet15", "nadiasofia_f", "fredborlido", "madaaav", "thelusitana", "nesita97", "definitelynotjota", "heliojdomingos", "pedro_lamego", "tiagoatfonseca", "martasaparicio", "franciscojsrosa", "sofiaaparicioofficial", "regouga", "carolinaavitorino", "miana.nunes", "ay_no_sekai", "itsmenunoo", "fiambredunicornio", "sanchabbarroso", "jdcenoura"],
-	"commonNumber": 29}
+	"commonNumber": 29,
+"group":3}
 ,{
 	"node":	"miana.nunes",
 	"followers": ["lexmaroco", "danielmaramalho", "gce.neiist", "afonsocrg", "_mrdominguez", "alxsous", "joanasteodoro", "isabelsoares16", "98migrocha", "agalambas", "decasppereira", "maggieeee.12", "biscoito.fofinho", "amargaridaferro", "goncalo_gil_simoes", "joaopinaa", "dtnunes", "lucet15", "ldpted", "pakh.momo", "nuno.martinss", "ines_mcm", "nadiasofia_f", "catarinalegria", "fredborlido", "joaojtmarques", "ma_britess", "vascocruzrodrigues", "danielseara99", "thelusitana", "definitelynotjota", "mariajmduarte", "heliojdomingos", "pedro_lamego", "inocaaa", "afonsobli", "daniisof.amaral", "miguelbaptista98", "marianapreal", "tiagoatfonseca", "dcacho23", "marianaccintrao", "freddydlima", "susmonteiro", "franciscojsrosa", "rafa_noideas", "carolinaavitorino", "tiago.barroso1", "inesppereira99", "ay_no_sekai", "joanaaialves", "itsmenunoo", "chinoips", "joanarocharaposo", "fiambredunicornio", "sanchabbarroso", "jdcenoura", "ines_batina", "juaninha.silva"],
-	"commonNumber": 59}
+	"commonNumber": 59,
+"group":3}
 ,{
 	"node":	"lucet15",
 	"followers": ["mariaforjo", "artur.fortunato", "lexmaroco", "gce.neiist", "_mrdominguez", "alxsous", "joanasteodoro", "isabelsoares16", "98migrocha", "agalambas", "decasppereira", "maggieeee.12", "biscoito.fofinho", "goncalo_gil_simoes", "joaopinaa", "dtnunes", "ldpted", "nuno.martinss", "nadiasofia_f", "catarinalegria", "fredborlido", "joaojtmarques", "ma_britess", "vascocruzrodrigues", "mariajmduarte", "ritaprates", "pedro_lamego", "inocaaa", "afonsobli", "daniisof.amaral", "miguelbaptista98", "tiagoatfonseca", "marianaccintrao", "freddydlima", "susmonteiro", "menapedreira", "carolinaavitorino", "miana.nunes", "inesppereira99", "ay_no_sekai", "joanaaialves", "itsmenunoo", "chinoips", "joanarocharaposo", "fiambredunicornio", "sanchabbarroso", "jdcenoura", "ines_batina"],
-	"commonNumber": 48}
+	"commonNumber": 48,
+"group":3}
 ,{
 	"node":	"ma_britess",
 	"followers": ["artur.fortunato", "lexmaroco", "danielmaramalho", "afonsocrg", "alxsous", "josebartissol", "98migrocha", "decasppereira", "maggieeee.12", "amargaridaferro", "goncalo_gil_simoes", "joaopinaa", "dtnunes", "lucet15", "ldpted", "nuno.martinss", "dcaramujo", "nadiasofia_f", "catarinalegria", "vascocruzrodrigues", "joaojtmarques", "danielseara99", "diopinto6", "mariajmduarte", "heliojdomingos", "pedro_lamego", "inocaaa", "daniisof.amaral", "miguelbaptista98", "marianapreal", "tiagoatfonseca", "marianaccintrao", "freddydlima", "martasaparicio", "franciscojsrosa", "susmonteiro", "regouga", "carolinaavitorino", "miana.nunes", "ay_no_sekai", "itsmenunoo", "chinoips", "tiagoprata98", "joanarocharaposo", "fiambredunicornio", "sanchabbarroso", "juaninha.silva"],
-	"commonNumber": 47}
+	"commonNumber": 47,
+"group":1}
 ,{
 	"node":	"marianaccintrao",
 	"followers": ["mariaforjo", "lexmaroco", "gce.neiist", "98migrocha", "decasppereira", "maggieeee.12", "biscoito.fofinho", "goncalo_gil_simoes", "joaopinaa", "dtnunes", "lucet15", "ldpted", "nuno.martinss", "fredborlido", "ma_britess", "definitelynotjota", "mariajmduarte", "ritaprates", "pedro_lamego", "inocaaa", "afonsobli", "tiagoatfonseca", "rodrigo_df98", "freddydlima", "susmonteiro", "franciscojsrosa", "regouga", "carolinaavitorino", "miana.nunes", "inesppereira99", "ay_no_sekai", "joanaaialves", "itsmenunoo", "chinoips", "fiambredunicornio", "sanchabbarroso", "franciscowmatos"],
-	"commonNumber": 37}
+	"commonNumber": 37,
+"group":3}
 ,{
 	"node":	"joaopinaa",
 	"followers": ["r.velhinho", "mariaforjo", "lexmaroco", "joao_barata98", "joanafpribeiro", "danielmaramalho", "afonsocrg", "_mrdominguez", "alxsous", "joanasteodoro", "josebartissol", "gce.neiist", "98migrocha", "agalambas", "decasppereira", "maggieeee.12", "amargaridaferro", "goncalo_gil_simoes", "dtnunes", "lucet15", "antoniocptsl", "ldpted", "pakh.momo", "nuno.martinss", "nadiasofia_f", "catarinalegria", "fredborlido", "joaojtmarques", "husseingiva", "ma_britess", "vascocruzrodrigues", "sinfoist", "danielsil30", "definitelynotjota", "heliojdomingos", "ritaprates", "mariajmduarte", "pedro_lamego", "inocaaa", "afonsobli", "daniisof.amaral", "miguelbaptista98", "marianapreal", "marrucho14", "tiagoatfonseca", "rodrigo_df98", "marianaccintrao", "freddydlima", "martasaparicio", "franciscojsrosa", "martaambrosioo", "regouga", "carolinaavitorino", "tiago.barroso1", "inesppereira99", "ay_no_sekai", "joanaaialves", "miana.nunes", "itsmenunoo", "fiambredunicornio", "sanchabbarroso", "jdcenoura", "ines_batina", "juaninha.silva"],
-	"commonNumber": 64}
+	"commonNumber": 64,
+"group":3}
 ,{
 	"node":	"inocaaa",
 	"followers": ["lexmaroco", "joao_barata98", "danielmaramalho", "_mrdominguez", "alxsous", "joanasteodoro", "isabelsoares16", "josebartissol", "98migrocha", "decasppereira", "maggieeee.12", "amargaridaferro", "joaopinaa", "dtnunes", "lucet15", "antoniocptsl", "ldpted", "nuno.martinss", "nadiasofia_f", "catarinalegria", "ma_britess", "joaojtmarques", "vascocruzrodrigues", "danielseara99", "thelusitana", "definitelynotjota", "mariajmduarte", "heliojdomingos", "ritaprates", "pedro_lamego", "daniisof.amaral", "miguelbaptista98", "tiagoatfonseca", "dcacho23", "marianaccintrao", "freddydlima", "martasaparicio", "susmonteiro", "franciscojsrosa", "rafa_noideas", "menapedreira", "regouga", "carolinaavitorino", "miana.nunes", "ay_no_sekai", "joanaaialves", "chinoips", "tiagoprata98", "joanarocharaposo", "sanchabbarroso", "jdcenoura", "juaninha.silva"],
-	"commonNumber": 52}
+	"commonNumber": 52,
+"group":3}
 ,{
 	"node":	"regouga",
 	"followers": ["r.velhinho", "mariaforjo", "lexmaroco", "joao_barata98", "joanafpribeiro", "danielmaramalho", "gce.neiist", "_mrdominguez", "isabelsoares16", "joanasteodoro", "josebartissol", "98migrocha", "agalambas", "decasppereira", "maggieeee.12", "joaopinaa", "dtnunes", "ldpted", "nuno.martinss", "nadiasofia_f", "catarinalegria", "ma_britess", "joaojtmarques", "husseingiva", "vascocruzrodrigues", "madaaav", "sinfoist", "nesita97", "danielsil30", "definitelynotjota", "heliojdomingos", "ritaprates", "pedro_lamego", "inocaaa", "afonsobli", "daniisof.amaral", "dcacho23", "marianaccintrao", "martasaparicio", "franciscojsrosa", "sofiaaparicioofficial", "menapedreira", "martaambrosioo", "inesppereira99", "ay_no_sekai", "joanaaialves", "itsmenunoo", "fiambredunicornio", "sanchabbarroso", "jdcenoura", "ines_batina", "franciscowmatos", "juaninha.silva"],
-	"commonNumber": 53}
+	"commonNumber": 53,
+"group":3}
 ,{
 	"node":	"catariinacnunes",
 	"followers": ["inespinta", "rosinha4580", "ana.caf", "1inees3", "andre_nogueira23", "afonsomcarvalho97", "andreeira"],
-	"commonNumber": 7}
+	"commonNumber": 7,
+"group":5}
 ,{
 	"node":	"alxsous",
 	"followers": ["lexmaroco", "danielmaramalho", "_mrdominguez", "decasppereira", "amargaridaferro", "joaopinaa", "lucet15", "nadiasofia_f", "ma_britess", "ritaprates", "pedro_lamego", "inocaaa", "tiagoatfonseca", "miana.nunes", "joanaaialves", "chinoips", "fiambredunicornio"],
-	"commonNumber": 17}
+	"commonNumber": 17,
+"group":3}
 ,{
 	"node":	"francisco.real.bentes",
 	"followers": ["salbunny98", "nunonobrega98", "jose.salbany", "pakh.momo", "joao_barata98", "danielmaramalho", "miguelbaptista98", "marta_narciso", "josebartissol", "agalambas", "rodrigo_df98", "jessicafortedefaria", "andre_nogueira23", "franciscojsrosa"],
-	"commonNumber": 14}
+	"commonNumber": 14,
+"group":5}
 ,{
 	"node":	"juaninha.silva",
 	"followers": ["artur.fortunato", "lexmaroco", "joao_barata98", "_mrdominguez", "joanasteodoro", "98migrocha", "agalambas", "decasppereira", "maggieeee.12", "joaopinaa", "dtnunes", "antoniocptsl", "pakh.momo", "ines_mcm", "nadiasofia_f", "ma_britess", "joaojtmarques", "danielseara99", "heliojdomingos", "ritaprates", "pedro_lamego", "inocaaa", "daniisof.amaral", "miguelbaptista98", "franciscojsrosa", "susmonteiro", "martaambrosioo", "regouga", "miana.nunes", "inesppereira99", "ay_no_sekai", "itsmenunoo", "sanchabbarroso"],
-	"commonNumber": 33}
+	"commonNumber": 33,
+"group":5}
 ,{
 	"node":	"santola_pedro",
 	"followers": ["maria.w.f", "datgoncalves", "salbunny98", "miguelsoaresoares", "dcaramujo", "inacio.diogo98", "xemosby", "ines_gerardo", "mcdino98", "mariana_machado98", "inescnvdias", "edu_tbraga", "jose.salbany", "maximus_triglicemicos", "castanhas98", "thealex1406", "rita_xarepe", "margarida99"],
-	"commonNumber": 18}
+	"commonNumber": 18,
+"group":1}
 ,{
 	"node":	"mcdino98",
 	"followers": ["guilherme.ocarvalho", "patriciag98"],
-	"commonNumber": 2}
+	"commonNumber": 2,
+"group":1}
 ,{
 	"node":	"afonsobli",
 	"followers": ["r.velhinho", "mariaforjo", "artur.fortunato", "lexmaroco", "joao_barata98", "danielmaramalho", "_mrdominguez", "isabelsoares16", "joanasteodoro", "nixnij14", "98migrocha", "agalambas", "decasppereira", "biscoito.fofinho", "amargaridaferro", "goncalo_gil_simoes", "reynaud_filipe", "joaopinaa", "marianamfelino", "dtnunes", "lucet15", "ldpted", "pedrogbcampos", "nadiasofia_f", "senhor.lourenco", "fredborlido", "joaojtmarques", "vascocruzrodrigues", "danielseara99", "rodrigo.jt.mota", "madaaav", "danielsil30", "definitelynotjota", "heliojdomingos", "ritaprates", "miguelbaptista98", "marrucho14", "dcacho23", "rodrigo_df98", "marianaccintrao", "freddydlima", "martasaparicio", "franciscojsrosa", "sofiaaparicioofficial", "menapedreira", "martaambrosioo", "regouga", "carolinaavitorino", "tiago.barroso1", "inesppereira99", "ay_no_sekai", "joanaaialves", "miana.nunes", "itsmenunoo", "chinoips", "fiambredunicornio", "jdcenoura", "franciscowmatos"],
-	"commonNumber": 58}
+	"commonNumber": 58,
+"group":3}
 ,{
 	"node":	"fredborlido",
 	"followers": ["mariaforjo", "artur.fortunato", "lexmaroco", "joao_barata98", "danielmaramalho", "joanasteodoro", "josebartissol", "98migrocha", "agalambas", "biscoito.fofinho", "reynaud_filipe", "joaopinaa", "dtnunes", "lucet15", "nuno.martinss", "nadiasofia_f", "carolina_fpf", "husseingiva", "vascocruzrodrigues", "rodrigo.jt.mota", "madaaav", "thelusitana", "nesita97", "danielsil30", "definitelynotjota", "heliojdomingos", "ritaprates", "ritaa.alves98", "afonsobli", "miguelbaptista98", "marrucho14", "dcacho23", "rodrigo_df98", "marianaccintrao", "ineslacerdaa", "franciscojsrosa", "menapedreira", "martaambrosioo", "carolinaavitorino", "miana.nunes", "ay_no_sekai", "joanaaialves", "itsmenunoo", "fiambredunicornio", "sanchabbarroso", "jdcenoura", "ines_batina", "franciscowmatos"],
-	"commonNumber": 48}
+	"commonNumber": 48,
+"group":3}
 ,{
 	"node":	"definitelynotjota",
 	"followers": ["r.velhinho", "mariaforjo", "artur.fortunato", "danielmaramalho", "whyviidee", "gce.neiist", "joanasteodoro", "98migrocha", "decasppereira", "amargaridaferro", "reynaud_filipe", "joaopinaa", "dtnunes", "_ana.goncalves_", "ldpted", "nadiasofia_f", "catarinalegria", "fredborlido", "carolina_fpf", "husseingiva", "vascocruzrodrigues", "thelusitana", "danielsil30", "heliojdomingos", "ritaprates", "pedro_lamego", "inocaaa", "afonsobli", "daniisof.amaral", "marrucho14", "rodrigo_df98", "marianaccintrao", "franciscojsrosa", "menapedreira", "regouga", "carolinaavitorino", "ritacsjfernandes", "tiago.barroso1", "miana.nunes", "ay_no_sekai", "itsmenunoo", "chinoips", "tiagoprata98", "sanchabbarroso", "jdcenoura", "ines_batina", "franciscowmatos"],
-	"commonNumber": 47}
+	"commonNumber": 47,
+"group":3}
 ,{
 	"node":	"98migrocha",
 	"followers": ["afonsocrg", "isabelsoares16", "pedrogbcampos", "senhor.lourenco", "danielseara99", "madaaav", "daniisof.amaral", "ineslacerdaa", "ritacsjfernandes", "carolinaavitorino", "joanaaialves", "ines_batina", "franciscowmatos", "mariaforjo", "artur.fortunato", "danielmaramalho", "decasppereira", "goncalo_gil_simoes", "nuno.martinss", "fredborlido", "husseingiva", "sinfoist", "miguelbaptista98", "marrucho14", "tiagoatfonseca", "dcacho23", "marianaccintrao", "freddydlima", "tiagoprata98", "r.velhinho", "lexmaroco", "joao_barata98", "gce.neiist", "joanasteodoro", "josebartissol", "agalambas", "biscoito.fofinho", "joaopinaa", "ldpted", "nadiasofia_f", "ma_britess", "vascocruzrodrigues", "nesita97", "definitelynotjota", "inocaaa", "rodrigo_df98", "menapedreira", "regouga", "tiago.barroso1", "miana.nunes", "ay_no_sekai", "chinoips", "juaninha.silva", "_mrdominguez", "nixnij14", "maggieeee.12", "amargaridaferro", "reynaud_filipe", "dtnunes", "lucet15", "antoniocptsl", "pakh.momo", "catarinalegria", "joaojtmarques", "danielsil30", "heliojdomingos", "pedro_lamego", "afonsobli", "martasaparicio", "susmonteiro", "franciscojsrosa", "martaambrosioo", "inesppereira99", "itsmenunoo", "fiambredunicornio", "jdcenoura"],
-	"commonNumber": 76}
+	"commonNumber": 76,
+"group":3}
 ,{
 	"node":	"annushkavk",
 	"followers": ["miguelsoaresoares", "marta_narciso"],
-	"commonNumber": 2}
+	"commonNumber": 2,
+"group":1}
 ,{
 	"node":	"ay_no_sekai",
 	"followers": ["r.velhinho", "mariaforjo", "artur.fortunato", "lexmaroco", "joao_barata98", "danielmaramalho", "whyviidee", "_mrdominguez", "isabelsoares16", "joanasteodoro", "nixnij14", "josebartissol", "98migrocha", "agalambas", "decasppereira", "maggieeee.12", "biscoito.fofinho", "amargaridaferro", "goncalo_gil_simoes", "reynaud_filipe", "joaopinaa", "dtnunes", "lucet15", "ldpted", "pakh.momo", "nuno.martinss", "pedrogbcampos", "ines_mcm", "senhor.lourenco", "catarinalegria", "fredborlido", "joaojtmarques", "husseingiva", "ma_britess", "vascocruzrodrigues", "thelusitana", "danielsil30", "definitelynotjota", "heliojdomingos", "ritaprates", "pedro_lamego", "inocaaa", "afonsobli", "daniisof.amaral", "miguelbaptista98", "marrucho14", "dcacho23", "rodrigo_df98", "marianaccintrao", "freddydlima", "martasaparicio", "franciscojsrosa", "menapedreira", "regouga", "carolinaavitorino", "ritacsjfernandes", "tiago.barroso1", "inesppereira99", "miana.nunes", "joanaaialves", "itsmenunoo", "chinoips", "tiagoprata98", "fiambredunicornio", "jdcenoura", "ines_batina", "franciscowmatos", "juaninha.silva"],
-	"commonNumber": 68}
+	"commonNumber": 68,
+"group":3}
 ,{
 	"node":	"nandobamaral",
 	"followers": ["martin.goncalves", "castanhas98", "andre_nogueira23", "mcdino98"],
-	"commonNumber": 4}
+	"commonNumber": 4,
+"group":1}
 ,{
 	"node":	"marrucho14",
 	"followers": ["mariaforjo", "artur.fortunato", "lexmaroco", "gce.neiist", "isabelsoares16", "joanasteodoro", "josebartissol", "98migrocha", "maggieeee.12", "goncalo_gil_simoes", "reynaud_filipe", "joaopinaa", "dtnunes", "fredborlido", "husseingiva", "danielsil30", "definitelynotjota", "heliojdomingos", "ritaprates", "afonsobli", "dcacho23", "rodrigo_df98", "menapedreira", "sofiaaparicioofficial", "martaambrosioo", "carolinaavitorino", "ay_no_sekai", "joanaaialves", "itsmenunoo", "fiambredunicornio", "tiagoprata98"],
-	"commonNumber": 31}
+	"commonNumber": 31,
+"group":3}
 ,{
 	"node":	"nuno_pinelaa",
 	"followers": ["rodri.melopinto", "rita_sfernandes", "andrecabaco", "dcaramujo", "nunoquintanilha", "olga_lourenco17", "diopinto6", "bia_carmo", "beatrizjpereira", "cncvg", "carlosajalmeida", "anasofia163", "abcrodrigues96"],
-	"commonNumber": 13}
+	"commonNumber": 13,
+"group":2}
 ,{
 	"node":	"itsmenunoo",
 	"followers": ["isabelsoares16", "senhor.lourenco", "danielseara99", "madaaav", "ritaprates", "daniisof.amaral", "ineslacerdaa", "ritacsjfernandes", "carolinaavitorino", "joanaaialves", "ines_batina", "franciscowmatos", "mariaforjo", "artur.fortunato", "98migrocha", "decasppereira", "_ana.goncalves_", "nuno.martinss", "fredborlido", "husseingiva", "thelusitana", "mariajmduarte", "miguelbaptista98", "marrucho14", "dcacho23", "marianaccintrao", "freddydlima", "sanchabbarroso", "r.velhinho", "lexmaroco", "joao_barata98", "gce.neiist", "whyviidee", "joanasteodoro", "josebartissol", "agalambas", "biscoito.fofinho", "joaopinaa", "ldpted", "nadiasofia_f", "carolina_fpf", "ma_britess", "nesita97", "definitelynotjota", "ritaa.alves98", "rodrigo_df98", "menapedreira", "miguelchorao34", "regouga", "tiago.barroso1", "miana.nunes", "ay_no_sekai", "chinoips", "juaninha.silva", "_mrdominguez", "nixnij14", "maggieeee.12", "amargaridaferro", "reynaud_filipe", "dtnunes", "lucet15", "catarinalegria", "rodrigo.jt.mota", "danielsil30", "heliojdomingos", "pedro_lamego", "afonsobli", "martasaparicio", "martaambrosioo", "inesppereira99", "fiambredunicornio", "jdcenoura"],
-	"commonNumber": 72}
+	"commonNumber": 72,
+"group":3}
 ,{
 	"node":	"miguelbaptista98",
 	"followers": ["r.velhinho", "mariaforjo", "lexmaroco", "joao_barata98", "danielmaramalho", "afonsocrg", "joanasteodoro", "nixnij14", "josebartissol", "98migrocha", "agalambas", "maggieeee.12", "amargaridaferro", "goncalo_gil_simoes", "joaopinaa", "dtnunes", "lucet15", "_ana.goncalves_", "pakh.momo", "francisco.real.bentes", "nadiasofia_f", "fredborlido", "carolina_fpf", "joaojtmarques", "husseingiva", "ma_britess", "danielseara99", "vascocruzrodrigues", "madaaav", "thelusitana", "danielsil30", "mariajmduarte", "ritaprates", "pedro_lamego", "inocaaa", "afonsobli", "marianapreal", "tiagoatfonseca", "dcacho23", "rodrigo_df98", "ineslacerdaa", "martasaparicio", "susmonteiro", "franciscojsrosa", "sofiaaparicioofficial", "menapedreira", "martaambrosioo", "ritacsjfernandes", "miana.nunes", "inesppereira99", "ay_no_sekai", "joanaaialves", "itsmenunoo", "chinoips", "tiagoprata98", "sanchabbarroso", "jdcenoura", "juaninha.silva"],
-	"commonNumber": 58}
+	"commonNumber": 58,
+"group":3}
 ,{
 	"node":	"cristinaprataruivo",
 	"followers": ["carlotaferreira1", "martajoana", "sara.espiritosanto.3"],
-	"commonNumber": 3}
+	"commonNumber": 3,
+"group":4}
 ,{
 	"node":	"danielsil30",
 	"followers": ["r.velhinho", "mariaforjo", "artur.fortunato", "lexmaroco", "joao_barata98", "afonsocrg", "_mrdominguez", "isabelsoares16", "josebartissol", "98migrocha", "agalambas", "decasppereira", "amargaridaferro", "goncalo_gil_simoes", "joaopinaa", "dtnunes", "ldpted", "pakh.momo", "nuno.martinss", "nadiasofia_f", "fredborlido", "joaojtmarques", "danielseara99", "definitelynotjota", "heliojdomingos", "ritaprates", "pedro_lamego", "afonsobli", "miguelbaptista98", "marrucho14", "tiagoatfonseca", "rodrigo_df98", "martasaparicio", "sofiaaparicioofficial", "regouga", "tiago.barroso1", "ay_no_sekai", "joanaaialves", "itsmenunoo", "fiambredunicornio", "tiagoprata98", "jdcenoura"],
-	"commonNumber": 42}
+	"commonNumber": 42,
+"group":3}
 ,{
 	"node":	"rodri.melopinto",
 	"followers": ["dcaramujo", "nunoquintanilha", "ines_mcm", "olga_lourenco17", "nuno_pinelaa", "diopinto6", "cncvg", "carlosajalmeida"],
-	"commonNumber": 8}
+	"commonNumber": 8,
+"group":2}
 ,{
 	"node":	"dcacho23",
 	"followers": ["r.velhinho", "mariaforjo", "artur.fortunato", "lexmaroco", "joao_barata98", "danielmaramalho", "whyviidee", "afonsocrg", "_mrdominguez", "isabelsoares16", "joanasteodoro", "nixnij14", "josebartissol", "98migrocha", "gce.neiist", "agalambas", "decasppereira", "biscoito.fofinho", "amargaridaferro", "reynaud_filipe", "dtnunes", "antoniocptsl", "_ana.goncalves_", "ldpted", "pakh.momo", "pedrogbcampos", "nadiasofia_f", "senhor.lourenco", "fredborlido", "carolina_fpf", "joaojtmarques", "husseingiva", "danielseara99", "rodrigo.jt.mota", "madaaav", "thelusitana", "heliojdomingos", "ritaprates", "pedro_lamego", "inocaaa", "afonsobli", "miguelbaptista98", "marrucho14", "tiagoatfonseca", "rodrigo_df98", "ineslacerdaa", "martasaparicio", "susmonteiro", "franciscojsrosa", "sofiaaparicioofficial", "menapedreira", "martaambrosioo", "regouga", "carolinaavitorino", "ritacsjfernandes", "tiago.barroso1", "ay_no_sekai", "joanaaialves", "miana.nunes", "itsmenunoo", "fiambredunicornio", "tiagoprata98", "jdcenoura", "franciscowmatos"],
-	"commonNumber": 64}
+	"commonNumber": 64,
+"group":3}
 ,{
 	"node":	"_ana.goncalves_",
 	"followers": ["mariaforjo", "lexmaroco", "joao_barata98", "danielmaramalho", "whyviidee", "josebartissol", "nixnij14", "agalambas", "amargaridaferro", "reynaud_filipe", "dtnunes", "nadiasofia_f", "carolina_fpf", "rodrigo.jt.mota", "definitelynotjota", "ritaprates", "miguelbaptista98", "dcacho23", "ineslacerdaa", "franciscojsrosa", "menapedreira", "martaambrosioo", "joanaaialves", "itsmenunoo", "tiagoprata98"],
-	"commonNumber": 25}
+	"commonNumber": 25,
+"group":3}
 ,{
 	"node":	"carolina_fpf",
 	"followers": ["mariaforjo", "lexmaroco", "joao_barata98", "danielmaramalho", "nixnij14", "agalambas", "amargaridaferro", "dtnunes", "_ana.goncalves_", "nuno.martinss", "nadiasofia_f", "fredborlido", "thelusitana", "definitelynotjota", "ritaprates", "inescnvdias", "miguelbaptista98", "dcacho23", "ineslacerdaa", "andreeira", "martaambrosioo", "joanaaialves", "itsmenunoo", "marianalfsousa", "tiagoprata98"],
-	"commonNumber": 25}
+	"commonNumber": 25,
+"group":3}
 ,{
 	"node":	"lexmaroco",
 	"followers": ["agalambas","tiagoprata98", "joanarocharaposo","_ana.goncalves_", "nadiasofia_f", "carolina_fpf", "ritaprates", "miguelbaptista98", "dcacho23", "ineslacerdaa", "martaambrosioo","josebartissol","mariaforjo", "r.velhinho", "joao_barata98", "danielmaramalho", "afonsocrg", "_mrdominguez", "alxsous", "joanasteodoro", "nixnij14", "isabelsoares16", "98migrocha", "decasppereira", "maggieeee.12", "biscoito.fofinho", "amargaridaferro", "goncalo_gil_simoes", "joaopinaa", "dtnunes", "lucet15", "ldpted", "nuno.martinss", "catarinalegria", "fredborlido", "joaojtmarques", "ma_britess", "madaaav", "thelusitana", "danielsil30", "mariajmduarte", "heliojdomingos", "pedro_lamego", "inocaaa", "afonsobli", "daniisof.amaral", "marrucho14", "tiagoatfonseca", "rodrigo_df98", "marianaccintrao", "freddydlima", "martasaparicio", "susmonteiro", "franciscojsrosa", "sofiaaparicioofficial", "menapedreira", "regouga", "carolinaavitorino", "miana.nunes", "inesppereira99", "ay_no_sekai", "joanaaialves", "itsmenunoo", "chinoips", "fiambredunicornio", "sanchabbarroso", "jdcenoura", "ines_batina", "juaninha.silva"],
-	"commonNumber": 69}
+	"commonNumber": 69,
+"group":3}
 ,{
 	"node":	"amargaridaferro",
 	"followers": ["mariaforjo", "artur.fortunato", "lexmaroco", "joao_barata98", "joanafpribeiro", "whyviidee", "afonsocrg", "alxsous", "joanasteodoro", "nixnij14", "isabelsoares16", "josebartissol", "98migrocha", "agalambas", "decasppereira", "maggieeee.12", "biscoito.fofinho", "andre_nogueira23", "goncalo_gil_simoes", "reynaud_filipe", "joaopinaa", "dtnunes", "antoniocptsl", "_ana.goncalves_", "ldpted", "pakh.momo", "nuno.martinss", "nadiasofia_f", "catarinalegria", "carolina_fpf", "joaojtmarques", "husseingiva", "ma_britess", "rodrigo.jt.mota", "thelusitana", "danielsil30", "definitelynotjota", "ritaprates", "pedro_lamego", "inocaaa", "afonsobli", "miguelbaptista98", "tiagoatfonseca", "dcacho23", "rodrigo_df98", "ineslacerdaa", "franciscojsrosa", "sofiaaparicioofficial", "menapedreira", "martaambrosioo", "ritacsjfernandes", "carolinaavitorino", "tiago.barroso1", "miana.nunes", "ay_no_sekai", "joanaaialves", "itsmenunoo", "fiambredunicornio", "tiagoprata98", "ines_batina", "franciscowmatos"],
-	"commonNumber": 61}
+	"commonNumber": 61,
+"group":3}
 ,{
 	"node":	"anasofia163",
 	"followers": ["mariana_machado98", "rita_sfernandes", "andrecabaco", "raquelranito", "olga_lourenco17", "nuno_pinelaa", "bia_carmo", "beatrizjpereira", "cncvg", "carlosajalmeida", "abcrodrigues96"],
-	"commonNumber": 11}
+	"commonNumber": 11,
+"group":2}
 ,{
 	"node":	"jose.salbany",
 	"followers": ["datgoncalves", "mariaaacatita", "miguelsoaresoares", "marianaisidrodocarmo", "saraquel_campos", "sofia_candeias", "edu_tbraga", "petrony98", "francisco.real.bentes", "matildecmelo", "margarida99", "martin.goncalves", "santola_pedro", "inescnvdias", "marta_narciso", "andre_rocha98", "salbunny98", "afonsomcarvalho97", "nunonobrega98", "castanhas98", "andre_nogueira23"],
-	"commonNumber": 21}
+	"commonNumber": 21,
+"group":1}
 ,{
 	"node":	"rita_xarepe",
 	"followers": ["maria.w.f", "mafaldabjacinto", "patriciag98", "andre_nogueira23", "dcaramujo", "inacio.diogo98", "ines_gerardo", "mcdino98", "mariana_machado98", "inescnvdias", "edu_tbraga", "marta_narciso", "castanhas98", "thealex1406", "margarida99", "martin.goncalves", "marianalfsousa", "p.s.lyra", "joana.prates", "margarida_b_pereira", "santola_pedro"],
-	"commonNumber": 21}
+	"commonNumber": 21,
+"group":1}
 ,{
 	"node":	"tiagomsaneves",
 	"followers": ["carolinalwx", "celinassousa"],
-	"commonNumber": 2}
+	"commonNumber": 2,
+"group":5}
 ,{
 	"node":	"tele.castro",
 	"followers": ["miguelsoaresoares", "dcaramujo", "marta_narciso", "xemosby", "joaocosmelli", "1inees3", "antoniomendes208", "datgoncalves", "mcdino98", "thealex1406", "ines_gerardo", "margarida99", "sofia_candeias"],
-	"commonNumber": 13}
+	"commonNumber": 13,
+"group":1}
 ,{
 	"node":	"patriciag98",
 	"followers": ["xyc_52", "andre_nogueira23", "katkat_twix", "inacio.diogo98", "ines_gerardo", "mcdino98", "mariana_machado98", "edu_tbraga", "castanhas98", "rita_xarepe"],
-	"commonNumber": 10}
+	"commonNumber": 10,
+"group":1}
 ,{
 	"node":	"olga_lourenco17",
 	"followers": ["mariana_machado98", "rodri.melopinto", "rita_sfernandes", "raquelranito", "nuno_pinelaa", "bia_carmo", "beatrizjpereira", "cncvg", "carlosajalmeida", "anasofia163", "abcrodrigues96"],
-	"commonNumber": 11}
+	"commonNumber": 11,
+"group":2}
 ,{
 	"node":	"dcaramujo",
 	"followers": ["madalenakuma", "maria.w.f", "nuno_pinelaa", "andre_nogueira23", "datgoncalves", "antoniomendes208", "salbunny98", "miguelsoaresoares", "joanne__reis", "ma_britess", "cncvg", "afonsomcarvalho97", "rodri.melopinto", "xemosby", "ines_gerardo", "mariana_machado98", "inescnvdias", "edu_tbraga", "andrecabaco", "marta_narciso", "joaocosmelli", "castanhas98", "andre_rocha98", "thealex1406", "rita_xarepe", "margarida99", "marianalfsousa", "bia_carmo", "tele.castro", "carlosajalmeida", "santola_pedro"],
-	"commonNumber": 31}
+	"commonNumber": 31,
+"group":1}
 ,{
 	"node":	"salbunny98",
 	"followers": ["petrony98", "joanne__reis", "jose.salbany", "ines_gerardo", "mcdino98", "mariaaacatita", "inacio.diogo98", "marta_narciso", "margarida_b_pereira", "martin.goncalves", 
 		"datgoncalves", "mariana_machado98", "afonsomcarvalho97", "inescnvdias", "santola_pedro", "dcaramujo", "margarida99", "edu_tbraga", "andre_rocha98", "castanhas98", "nunonobrega98", "francisco.real.bentes", "marianaisidrodocarmo", "andre_nogueira23"],
-	"commonNumber": 24}
+	"commonNumber": 24,
+"group":1}
 ,{
 	"node":	"ineespedro",
 	"followers": ["mariafdbrito", "afonso0854", "j.diogotavares", "bcustodio1539", "ricardopedro90", "vsanto436", "sara.espiritosanto.3", "marisa_clourenco"],
-	"commonNumber": 8}
+	"commonNumber": 8,
+"group":4}
 ,{
 	"node":	"martajoana",
 	"followers": ["cristinaprataruivo"],
-	"commonNumber": 1}
+	"commonNumber": 1,
+"group":4}
 ,{
 	"node":	"maggiepcunha",
 	"followers": [],
-	"commonNumber": 0}
+	"commonNumber": 0,
+"group":5}
 ,{
 	"node":	"maximus_triglicemicos",
 	"followers": ["edu_tbraga", "josebartissol", "mafaldabjacinto", "castanhas98", "inacio.diogo98", "petrony98", "mcdino98", "santola_pedro"],
-	"commonNumber": 8}
+	"commonNumber": 8,
+"group":1}
 ,{
 	"node":	"xyc_52",
 	"followers": ["miguelsoaresoares", "chengyu_163", "martin.goncalves", "pedro.cruz28597", "castanhas98", "patriciag98", "andre_nogueira23", "afonsomcarvalho97", "mcdino98"],
-	"commonNumber": 9}
+	"commonNumber": 9,
+"group":1}
 ,{
 	"node":	"edu_tbraga",
 	"followers": ["patriciag98", "datgoncalves", "salbunny98", "miguelsoaresoares", "katkat_twix", "dcaramujo", "inacio.diogo98", "afonsomcarvalho97", "xemosby", "ines_gerardo", "mariana_machado98", "inescnvdias", "jose.salbany", "maximus_triglicemicos", "joaocosmelli", "castanhas98", "thealex1406", "rita_xarepe", "margarida99", "petrony98", "bia_carmo", "carlosajalmeida", "margarida_b_pereira", "santola_pedro"],
-	"commonNumber": 24}
+	"commonNumber": 24,
+"group":1}
 ,{
 	"node":	"cncvg",
 	"followers": ["mariana_machado98", "rita_sfernandes", "dcaramujo", "raquelranito", "olga_lourenco17", "nuno_pinelaa", "bia_carmo", "beatrizjpereira", "rodri.melopinto", "anasofia163"],
-	"commonNumber": 10}
+	"commonNumber": 10,
+"group":2}
 ,{
 	"node":	"antoniomendes208",
 	"followers": ["guilherme.ocarvalho", "dcaramujo", "joaocosmelli", "tele.castro", "thealex1406", "ines_gerardo", "margarida99", "miguelchorao34"],
-	"commonNumber": 8}
+	"commonNumber": 8,
+"group":1}
 ,{
 	"node":	"bia_carmo",
 	"followers": ["jp_anastacio_", "nuno_pinelaa", "andre_nogueira23", "anasofia163", "beatrizjpereira", "miguelsoaresoares", "rita_sfernandes", "dcaramujo", "nunoquintanilha", "cncvg", "mariana_machado98", "edu_tbraga", "andrecabaco", "olga_lourenco17", "raquelranito", "carlosajalmeida"],
-	"commonNumber": 16}
+	"commonNumber": 16,
+"group":2}
 ,{
 	"node":	"datgoncalves",
 	"followers": ["salbunny98", "miguelsoaresoares", "jose.salbany", "edu_tbraga", "dcaramujo", "marianalfsousa", "petrony98", "tele.castro", "thealex1406", "ines_gerardo", "margarida99", "santola_pedro"],
-	"commonNumber": 12}
+	"commonNumber": 12,
+"group":1}
 ,{
 	"node":	"thealex1406",
 	"followers": ["maria.w.f", "andre_nogueira23", "datgoncalves", "antoniomendes208", "miguelsoaresoares", "matildecmelo", "dcaramujo", "inacio.diogo98", "afonsomcarvalho97", "ines_gerardo", "sofia_candeias", "mariana_machado98", "inescnvdias", "edu_tbraga", "marta_narciso", "joaocosmelli", "castanhas98", "rita_xarepe", "margarida99", "tele.castro", "carlosajalmeida", "margarida_b_pereira", "santola_pedro"],
-	"commonNumber": 23}
+	"commonNumber": 23,
+"group":1}
 ,{
 	"node":	"rita_sfernandes",
 	"followers": ["mariana_machado98", "andrecabaco", "nunoquintanilha", "raquelranito", "p.s.lyra", "mafaldabjacinto", "olga_lourenco17", "nuno_pinelaa", "bia_carmo", "beatrizjpereira", "cncvg", "anasofia163", "carlosajalmeida"],
-	"commonNumber": 13}
+	"commonNumber": 13,
+"group":2}
 ,{
 	"node":	"sara.espiritosanto.3",
 	"followers": ["mariafdbrito", "afonso0854", "joserafaeltavares", "martajoana", "ineespedro", "cristinaprataruivo", "ricardopedro90", "bcustodio1539", "vsanto436"],
-	"commonNumber": 9}
+	"commonNumber": 9,
+"group":4}
 ,{
 	"node":	"joserafaeltavares",
 	"followers": ["j.diogotavares", "sara.espiritosanto.3", "afonso0854"],
-	"commonNumber": 3}
+	"commonNumber": 3,
+"group":5}
 ,{
 	"node":	"matildecmelo",
 	"followers": ["guilherme.ocarvalho", "andre_nogueira23", "franciscadssantos", "ines_gerardo", "sofia_candeias", "mariana_machado98", "jose.salbany", "joaocosmelli", "thealex1406", "miguelchorao34", "marianalfsousa", "margarida_b_pereira"],
-	"commonNumber": 12}
+	"commonNumber": 12,
+"group":1}
 ,{
 	"node":	"sofia_candeias",
 	"followers": ["guilherme.ocarvalho", "maria.w.f", "matildecmelo", "franciscadssantos", "ines_gerardo", "mariana_machado98", "jose.salbany", "marta_narciso", "joaocosmelli", "thealex1406", "martin.goncalves", "marianalfsousa", "tele.castro"],
-	"commonNumber": 13}
+	"commonNumber": 13,
+"group":1}
 ,{
 	"node":	"mafaldabjacinto",
 	"followers": ["josebartissol", "mariana_machado98"],
-	"commonNumber": 2}
+	"commonNumber": 2,
+"group":1}
 ,{
 	"node":	"ricardopedro90",
 	"followers": ["mariafdbrito", "afonso0854"],
-	"commonNumber": 2}
+	"commonNumber": 2,
+"group":4}
 ,{
 	"node":	"margarida_b_pereira",
 	"followers": ["salbunny98", "ines_gerardo", "matildecmelo", "miguelsoaresoares", "edu_tbraga", "p.s.lyra", "mafaldabjacinto", "andre_nogueira23", "afonsomcarvalho97", "thealex1406", "rita_xarepe"],
-	"commonNumber": 11}
+	"commonNumber": 11,
+"group":1}
 ,{
 	"node":	"mariana_machado98",
 	"followers": ["maria.w.f", "josebartissol", "mafaldabjacinto", "patriciag98", "andre_nogueira23", "beatrizjpereira", "anasofia163", "salbunny98", "miguelsoaresoares", "matildecmelo", "rita_sfernandes", "dcaramujo", "nunoquintanilha", "joanne__reis", "franciscadssantos", "cncvg", "afonsomcarvalho97", "xemosby", "ines_gerardo", "sofia_candeias", "inescnvdias", "edu_tbraga", "andrecabaco", "marta_narciso", "castanhas98", "olga_lourenco17", "thealex1406", "rita_xarepe", "martin.goncalves", "raquelranito", "marianalfsousa", "p.s.lyra", "bia_carmo", "carlosajalmeida", "santola_pedro"],
-	"commonNumber": 35}
+	"commonNumber": 35,
+"group":1}
 ,{
 	"node":	"nunoquintanilha",
 	"followers": ["mariana_machado98", "rodri.melopinto", "rita_sfernandes", "raquelranito", "nuno_pinelaa", "bia_carmo", "beatrizjpereira", "carlosajalmeida", "abcrodrigues96"],
-	"commonNumber": 9}
+	"commonNumber": 9,
+"group":2}
 ,{
 	"node":	"marianalfsousa",
 	"followers": ["mafaldabjacinto", "datgoncalves", "matildecmelo", "dcaramujo", "joanne__reis", "valerianestarte", "carolina_fpf", "afonsomcarvalho97", "ines_gerardo", "sofia_candeias", "mariana_machado98", "marta_narciso", "castanhas98", "rita_xarepe", "margarida99", "inesppereira99", "p.s.lyra", "joana.prates", "mcdino98"],
-	"commonNumber": 19}
+	"commonNumber": 19,
+"group":1}
 ,{
 	"node":	"carlosajalmeida",
 	"followers": ["mariana_machado98", "rita_sfernandes", "edu_tbraga", "andrecabaco", "nunoquintanilha", "dcaramujo", "raquelranito", "olga_lourenco17", "nuno_pinelaa", "bia_carmo", "beatrizjpereira", "rodri.melopinto", "thealex1406", "anasofia163"],
-	"commonNumber": 14}
+	"commonNumber": 14,
+"group":2}
 ,{
 	"node":	"marisa_clourenco",
 	"followers": ["joaocosmelli", "p.s.lyra", "ineespedro"],
-	"commonNumber": 3}
+	"commonNumber": 3,
+"group":4}
 ,{
 	"node":	"beatrizjpereira",
 	"followers": ["mariana_machado98", "rita_sfernandes", "nunoquintanilha", "raquelranito", "olga_lourenco17", "nuno_pinelaa", "bia_carmo", "cncvg", "carlosajalmeida", "anasofia163"],
-	"commonNumber": 10}
+	"commonNumber": 10,
+"group":2}
 ,{
 	"node":	"maria.w.f",
 	"followers": ["mafaldabjacinto", "miguelsoaresoares", "dcaramujo", "afonsomcarvalho97", "sofia_candeias", "mariana_machado98", "marta_narciso", "thealex1406", "rita_xarepe", "santola_pedro"],
-	"commonNumber": 10}
+	"commonNumber": 10,
+"group":1}
 ,{
 	"node":	"afonso0854",
 	"followers": ["joserafaeltavares", "ineespedro", "bcustodio1539", "ricardopedro90", "vsanto436", "sara.espiritosanto.3"],
-	"commonNumber": 6}
+	"commonNumber": 6,
+"group":4}
 ,{
 	"node":	"raquelranito",
 	"followers": ["mariana_machado98", "rita_sfernandes", "nunoquintanilha", "olga_lourenco17", "bia_carmo", "beatrizjpereira", "cncvg", "carlosajalmeida", "anasofia163"],
-	"commonNumber": 9}
+	"commonNumber": 9,
+"group":2}
 ,{
 	"node":	"afonsomcarvalho97",
 	"followers": ["maria.w.f", "jp_anastacio_", "josebartissol", "mafaldabjacinto", "andre_nogueira23", "xyc_52", "ana.caf", "salbunny98", "miguelsoaresoares", "dcaramujo", "chengyu_163", "valerianestarte", "catariinacnunes", "inacio.diogo98", "mariana_machado98", "inescnvdias", "rosinha4580", "edu_tbraga", "jose.salbany", "carolinaaalves17", "castanhas98", "thealex1406", "andreeira", "inespinta", "marianaisidrodocarmo", "martin.goncalves", "marianalfsousa", "p.s.lyra", "margarida_b_pereira"],
-	"commonNumber": 29}
+	"commonNumber": 29,
+"group":1}
 ,{
 	"node":	"margarida99",
 	"followers": ["josebartissol", "martin.goncalves", "petrony98", "salbunny98", "tele.castro", "dcaramujo", "valerianestarte", "santola_pedro", "antoniomendes208", "jose.salbany", "edu_tbraga", 
 		"thealex1406", "datgoncalves", "rita_xarepe", "joana.prates", "mafaldabjacinto", "joanne__reis", "ines_gerardo", "miguelsoaresoares", "marianalfsousa", "marta_narciso"],
-	"commonNumber": 21}
+	"commonNumber": 21,
+"group":1}
 ,{
 	"node":	"andre_nogueira23",
 	"followers": ["guilherme.ocarvalho", "jp_anastacio_", "mafaldabjacinto", "patriciag98", "carolinalwx", "xyc_52", "ana.caf", "amargaridaferro", "salbunny98", "saraquel_campos", "matildecmelo", "miguelsoaresoares", "dcaramujo", "francisco.real.bentes", "joanne__reis", "valerianestarte", "catariinacnunes", "afonsomcarvalho97", "mcdino98", "mariana_machado98", "inescnvdias", "rosinha4580", "nunonobrega98", "jose.salbany", "carolinaaalves17", "marta_narciso", "tiagomsaneves", "mariaaacatita", "castanhas98", "andre_rocha98", "1inees3", "thealex1406", "rita_xarepe", "andreeira", "miguelchorao34", "inespinta", "nadia_remtula", "marianaisidrodocarmo", "martin.goncalves", "p.s.lyra", "bia_carmo", "nandobamaral", "margarida_b_pereira"],
-	"commonNumber": 43}
+	"commonNumber": 43,
+"group":1}
 ,{
 	"node":	"miguelsoaresoares",
 	"followers": ["jose.salbany", "tele.castro", "xemosby", "chengyu_163", "santola_pedro", "pedro.cruz28597", "dcaramujo", "inesppereira99", "xyc_52", "bia_carmo", "castanhas98", "annushkavk", "mafaldabjacinto", "datgoncalves", "edu_tbraga", "inacio.diogo98", "thealex1406", "saraquel_campos", "p.s.lyra", "margarida_b_pereira", "andre_nogueira23", "mariana_machado98", "ines_gerardo", "marta_narciso", "margarida99", "maria.w.f", "afonsomcarvalho97"],
-	"commonNumber": 27}
+	"commonNumber": 27,
+"group":1}
 ,{
 	"node":	"castanhas98",
 	"followers": ["ritaprates", "marianaisidrodocarmo", "xemosby", "chengyu_163", "petrony98", "mariaaacatita", "rita_xarepe", "edu_tbraga", "marta_narciso", "nunonobrega98", "martin.goncalves", "thealex1406", "patriciag98", "joanne__reis", "salbunny98", "dcaramujo", "saraquel_campos", "xyc_52", "valerianestarte", "mariana_machado98", "jose.salbany", "santola_pedro", "inescnvdias", "miguelsoaresoares", "afonsomcarvalho97", "nandobamaral", "maximus_triglicemicos", "mcdino98", "marianalfsousa", "andre_rocha98", "inacio.diogo98", "andre_nogueira23"],
-	"commonNumber": 32}
+	"commonNumber": 32,
+"group":1}
 ,{
 	"node": "petrony98",
 	"followers": ["castanhas98", "inacio.diogo98", "pedro.pacheco.735507", "maximus_triglicemicos" , "edu_tbraga", "datgoncalves", "margarida99", "salbunny98"],
-	"commonNumber": 8}
+	"commonNumber": 8,
+"group":1}
 ,{
 	"node": "mariafdbrito",
 	"followers": ["ineespedro", "ricardopedro90", "vsanto436", "sara.espiritosanto.3"],
-	"commonNumber": 4}
+	"commonNumber": 4,
+"group":4}
 ]
