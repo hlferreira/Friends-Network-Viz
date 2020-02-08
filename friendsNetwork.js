@@ -3,6 +3,8 @@ var dispatch = d3.dispatch('userInfo')
 nodes = [];
 links = [];
 
+color = d3.scaleOrdinal(d3.schemeTableau10)
+
 d3.json("instagramFriendsNetwork.json").then(function(data) {
   dataset = data;
   genViz()
@@ -18,18 +20,24 @@ function genViz() {
   console.log(links);
   
   max = d3.max(dataset, function(d) {return d.commonNumber})
-  scale = d3.scaleQuantize().domain([0,max]).range([5,7,10,15,18])
-  color = d3.scaleOrdinal(d3.schemeTableau10)
+  circleScale = d3.scaleQuantize().domain([0,max]).range([5,7,10,15,18])
   
-  var i = 0;
+  
   simulation = d3.forceSimulation(nodes)
   .force('charge', d3.forceManyBody().strength(-70))
   .force('link', d3.forceLink(links).id(d => d.id).distance(200))
   .force('center', d3.forceCenter(width/2, height/2))
   .force('collide', d3.forceCollide(10))
-
-  var svg = d3.select('#network').append('svg').attr('width', width).attr('height', height)
   
+  var svg = d3.select('#network').append('svg').attr('width', width).attr('height', height).on('click', function(){d3.selectAll('line').attr('class', 'untouchedline').attr('stroke', 'grey')})
+  
+  //Brush
+  var brush = svg.append('g').attr('class', 'brush')
+              .call(d3.brush().extent([[0, 0], [width, height]])
+              .on('start', bStart)
+              .on('brush', brushed)
+              .on('end', bEnd));
+
   var link = svg.append('g').attr("stroke", "#999")
   .attr("stroke-opacity", 0.6)
   .selectAll('line')
@@ -45,26 +53,22 @@ function genViz() {
   .data(nodes).join('circle')
   .attr('class', 'users')
   .attr('id', function (d) {return 'user' + d.id})
-  .attr('r', function (d) {if(d.id == 'hlferreira27') return 10; else return scale(d.commonNumber)})
+  .attr('r', function (d) {if(d.id == dataset[0].node) return 10; else return circleScale(d.commonNumber)})
   .attr('fill', function(d) {return color(d.group)})
-  .attr('stroke', 'white')
   .on('mouseover', function(d) {
     d3.select('.tooltip').remove()
     var tooltip = d3.select('body').append('div').attr('class', 'tooltip')
     tooltip.transition().duration(100)
 
     tooltip.html("User: ".bold() + d.id + "<br/>" + "Instagram: ".bold() + "<a href='https://www.instagram.com/" + d.id + "\'" + ">" + d.id + "</a>")
-    .style('left', d3.event.pageX + "px").style('top', d3.event.pageY + "px")
+          .style('left', (d3.event.pageX + 15) + "px").style('top', (d3.event.pageY - 40) + "px")
   })
   .on('mouseout', function() {
-    
     var tooltip = d3.select('.tooltip')
     tooltip.transition().duration(800).remove()
-
   })
-  .on('click', function(d){ dispatch.call('userInfo', d,d);
-  selectedUser.select("title").html("<a href='https://www.instagram.com/" + d.id + "\'" + ">Instagram Profile</a>").text('User: ' + d.id)
-})
+  .on('click', function(d){ dispatch.call('userInfo', d,d);d3.event.stopPropagation();})
+  .call(d3.drag().on('drag', function(d) {return dragged(d)}))
 
 simulation.on('tick', function (d) {
   link.attr('x1', d => d.source.x)
@@ -74,7 +78,55 @@ simulation.on('tick', function (d) {
   
   node.attr('cx', d => d.x).attr('cy', d => d.y)
 });
+
+  function bStart(){
+    console.log('brush has started')
+  }
+
+  function brushed(){
+    selection = d3.event.selection
+    if(selection != null)
+    node.attr('class', function(d) {
+      if(selection[0][0] <= d.x && selection[1][0] > d.x && selection[0][1] <= d.y && selection[1][1] > d.y)
+      return 'brushSelected';
+    })
+  }
+
+  function bEnd(){
+    if(d3.event.selection != null) {
+      d3.select(this).call(d3.event.target.move, null)
+    }
+  }
+
+  function dragged(d) {
+    dx = d3.event.dx;
+    dy = d3.event.dy;
+
+    brushed = d3.selectAll('.brushSelected').attr('x', function(d) {return d.x += dx}).attr('y', function(d) { return d.y += dy})
+    
+    
+    d3.selectAll(function(d) {console.log(d);
+    ;return "line[source=\'" + d.id + "\']"}).attr('x1', function(d) {return d.x}).attr('y1', function(d) {return d.y})
+    d3.selectAll(function(d) {return "line[target=\'" + d.id + "\']"}).attr('x2', function(d) {return d.x}).attr('y2', function(d) {return d.y})
+  }
+
 }
+
+
+dispatch.on('userInfo', function(d){
+  unselectedLines = d3.selectAll("line").attr('stroke', 'grey').attr('class', 'unselectedLine')
+  selectedLineSource = d3.selectAll("line[source=\'" + d.id + "\']")
+  selectedLineTarget = d3.selectAll("line[target=\'" + d.id + "\']")
+  selectedLineSource.attr('class', "selectedLine").attr('stroke', color(d.group)).raise()
+  selectedLineTarget.attr('class', "selectedLine").attr('stroke', color(d.group)).raise()
+});
+
+function searchUser(user){
+  userNode = nodes.filter(function(d){if(d.id == user) return d})
+  if(userNode[0] != undefined)
+  dispatch.call('userInfo', userNode[0], userNode[0]);
+}
+
 
 //this function is only here because i was lazy doing the JSON file
 function jsonFix() {
@@ -94,11 +146,3 @@ function jsonFix() {
     passedUsers.push(dataset[n].node)
   }
 }
-
-dispatch.on('userInfo', function(d){
-  unselectedLines = d3.selectAll("line").attr('class', 'unselectedLine')
-  selectedLineSource = d3.selectAll("line[source=\'" + d.id + "\']")
-  selectedLineTarget = d3.selectAll("line[target=\'" + d.id + "\']")
-  selectedLineSource.attr('class', "selectedLine").raise()
-  selectedLineTarget.attr('class', "selectedLine").raise()
-})

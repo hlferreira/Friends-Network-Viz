@@ -5,6 +5,18 @@
     <link rel="stylesheet" href="network.css">
     <body>
         <div id = "network"></div>
+        <input type="search" id = "input" name = "f" onkeypress="checkIfEnter(event)">
     </body>
+    <script>
+        function checkIfEnter(event) {
+            if(event.key == 'Enter' && event.key != undefined){
+                input = document.getElementById('input')
+                if(input.value != ""){
+                    searchUser(input.value)
+                }
+                input.value = "";
+            }
+        }
+        </script>
 </html>
 
