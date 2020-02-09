@@ -52,7 +52,7 @@ function genViz() {
   .selectAll('circle')
   .data(nodes).join('circle')
   .attr('class', 'users')
-  .attr('id', function (d) {return 'user' + d.id})
+  .attr('id', function (d) {return d.id})
   .attr('r', function (d) {if(d.id == dataset[0].node) return 10; else return circleScale(d.commonNumber)})
   .attr('fill', function(d) {return color(d.group)})
   .on('mouseover', function(d) {
@@ -68,7 +68,7 @@ function genViz() {
     tooltip.transition().duration(800).remove()
   })
   .on('click', function(d){ dispatch.call('userInfo', d,d);d3.event.stopPropagation();})
-  .call(d3.drag().on('drag', function(d) {return dragged(d)}))
+  .call(d3.drag().on('start', dragStart).on('drag', dragged))
 
 simulation.on('tick', function (d) {
   link.attr('x1', d => d.source.x)
@@ -87,8 +87,12 @@ simulation.on('tick', function (d) {
     selection = d3.event.selection
     if(selection != null)
     node.attr('class', function(d) {
-      if(selection[0][0] <= d.x && selection[1][0] > d.x && selection[0][1] <= d.y && selection[1][1] > d.y)
-      return 'brushSelected';
+      if(selection[0][0] <= d.x && selection[1][0] > d.x && selection[0][1] <= d.y && selection[1][1] > d.y){
+        d.selected = true;
+        return 'brushSelected';
+      }
+      else
+        return 'users'
     })
   }
 
@@ -98,16 +102,32 @@ simulation.on('tick', function (d) {
     }
   }
 
-  function dragged(d) {
+  sources = []
+  targets = []
+  brushed = []
+  function dragStart(){
+    console.log('here');
+    
+    sources = link.filter(function(d) {return d.source.selected})
+    targets = link.filter(function(d) {return d.target.selected})
+    brushed = d3.selectAll('.brushSelected')
+  }
+
+  function dragged() {
     dx = d3.event.dx;
     dy = d3.event.dy;
 
-    brushed = d3.selectAll('.brushSelected').attr('x', function(d) {return d.x += dx}).attr('y', function(d) { return d.y += dy})
-    
-    
-    d3.selectAll(function(d) {console.log(d);
-    ;return "line[source=\'" + d.id + "\']"}).attr('x1', function(d) {return d.x}).attr('y1', function(d) {return d.y})
-    d3.selectAll(function(d) {return "line[target=\'" + d.id + "\']"}).attr('x2', function(d) {return d.x}).attr('y2', function(d) {return d.y})
+    brushed.attr('cx', function(d) {return d.x += dx}).attr('cy', function(d) {return d.y += dy})
+
+    sources.attr('x1', function(d) {return d.source.x})
+           .attr('y1', function(d) {return d.source.y})
+           .attr('x2', function(d) {return d.target.x})
+           .attr('y2', function(d) {return d.target.y})
+
+    targets.attr('x1', function(d) {return d.source.x})
+           .attr('y1', function(d) {return d.source.y})
+           .attr('x2', function(d) {return d.target.x})
+           .attr('y2', function(d) {return d.target.y})
   }
 
 }
@@ -132,7 +152,7 @@ function searchUser(user){
 function jsonFix() {
   var passedUsers = []
   for (n in dataset) {
-    nodes.push({"id": dataset[n].node, "commonNumber": dataset[n].commonNumber, "group": dataset[n].group});  
+    nodes.push({"id": dataset[n].node, "commonNumber": dataset[n].commonNumber, "group": dataset[n].group, "selected": false});  
     for (i in dataset[n].followers) {
       
       var user = dataset[n].followers[i]
