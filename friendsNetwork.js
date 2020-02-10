@@ -10,6 +10,8 @@ d3.json("instagramFriendsNetwork.json").then(function(data) {
   genViz()
 });
 
+
+
 function genViz() {
   width = 1900
   height = 1080
@@ -18,11 +20,14 @@ function genViz() {
   
   console.log(nodes);
   console.log(links);
+
+  var max = d3.max(dataset, function(d) {return d.commonNumber})
+  //5:0-15    7:16-30   10:30-45  15:46-60   18:61-76
+  circleScale = d3.scaleQuantize().domain([0,max]).range([4,8,12,16,20])
   
-  max = d3.max(dataset, function(d) {return d.commonNumber})
-  circleScale = d3.scaleQuantize().domain([0,max]).range([5,7,10,15,18])
-  
-  
+  createWidget(max, circleScale)
+
+
   simulation = d3.forceSimulation(nodes)
   .force('charge', d3.forceManyBody().strength(-70))
   .force('link', d3.forceLink(links).id(d => d.id).distance(200))
@@ -53,7 +58,7 @@ function genViz() {
   .data(nodes).join('circle')
   .attr('class', 'users')
   .attr('id', function (d) {return d.id})
-  .attr('r', function (d) {if(d.id == dataset[0].node) return 10; else return circleScale(d.commonNumber)})
+  .attr('r', function (d) {if(d.id == dataset[0].node) return 20; else return circleScale(d.commonNumber)})
   .attr('fill', function(d) {return color(d.group)})
   .on('mouseover', function(d) {
     d3.select('.tooltip').remove()
@@ -145,6 +150,25 @@ function searchUser(user){
   userNode = nodes.filter(function(d){if(d.id == user) return d})
   if(userNode[0] != undefined)
   dispatch.call('userInfo', userNode[0], userNode[0]);
+}
+
+function createWidget(max, circleScale) {
+  //there is 5 different circle values
+  var sWidth = 300
+  var sHeight = 60
+  var maximumRadius = circleScale(max)
+  var spaceOut = 8
+  var translation = maximumRadius + spaceOut/2
+  var sg = d3.select('#sizeWidget').append('svg').attr('id', 'sizeSvg').attr('width', sWidth).attr('height', sHeight).append('g')
+  for(i=0; i<5; i++){
+    var r = circleScale(i*15+1)
+    sg.append('circle').attr('class', 'users').attr('r', r).attr('fill', color(0)).attr('cx', sWidth*0.1+ translation + i*(spaceOut + 2*maximumRadius)).attr('cy', sHeight/2)
+  }
+  //there is 6 different color values
+  var cg = d3.select('#colorWidget').append('svg').attr('id', 'colorSvg').attr('width', sWidth).attr('height', sHeight).append('g')
+  for(i=0; i<6; i++){
+    cg.append('circle').attr('class', 'users').attr('r', circleScale(max)).attr('fill', color(i)).attr('cx', sWidth*0.1 + i*(spaceOut + 2*maximumRadius)).attr('cy', sHeight/2)
+  }
 }
 
 

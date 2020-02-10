@@ -1,6 +1,7 @@
 .users{
     stroke: white;
     border: 2pt;
+    cursor: pointer;
 }
 
 .brushSelected {
@@ -40,4 +41,33 @@ line {
     border: 1px;
     border-radius: 8px;
     opacity: 1;
+}
+
+#widget {
+    text-align: center;
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    left: 75%;
+    top: 10%;
+}
+
+#sizeWidget {
+    width: 100%;
+    height: 20%;
+    position: flex;
+    flex-direction: column;
+}
+
+#sizeSvg{
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+#colorSvg{
+    position: relative;
+    top: 50%;
+    align-items: center;
+    text-align: center;
 }
