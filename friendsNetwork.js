@@ -1,4 +1,5 @@
 var dataset;
+var simulation;
 var dispatch = d3.dispatch('userInfo')
 nodes = [];
 links = [];
@@ -7,32 +8,31 @@ color = d3.scaleOrdinal(d3.schemeTableau10)
 
 d3.json("instagramFriendsNetwork.json").then(function(data) {
   dataset = data;
+  jsonFix();
   genViz()
 });
 
 
-
 function genViz() {
-  width = 1900
-  height = 1080
   
-  jsonFix();
   
   console.log(nodes);
   console.log(links);
-
+  
   var max = d3.max(dataset, function(d) {return d.commonNumber})
   //5:0-15    7:16-30   10:30-45  15:46-60   18:61-76
   circleScale = d3.scaleQuantize().domain([0,max]).range([4,8,12,16,20])
   
-  createWidget(max, circleScale)
-
-
+  width = 1900
+  height = 1080
+  
   simulation = d3.forceSimulation(nodes)
   .force('charge', d3.forceManyBody().strength(-70))
   .force('link', d3.forceLink(links).id(d => d.id).distance(200))
   .force('center', d3.forceCenter(width/2, height/2))
   .force('collide', d3.forceCollide(10))
+
+  createWidget(max, circleScale, simulation)
   
   var svg = d3.select('#network').append('svg').attr('width', width).attr('height', height).on('click', function(){d3.selectAll('line').attr('class', 'untouchedline').attr('stroke', 'grey')})
   
@@ -110,9 +110,7 @@ simulation.on('tick', function (d) {
   sources = []
   targets = []
   brushed = []
-  function dragStart(){
-    console.log('here');
-    
+  function dragStart(){   
     sources = link.filter(function(d) {return d.source.selected})
     targets = link.filter(function(d) {return d.target.selected})
     brushed = d3.selectAll('.brushSelected')
@@ -152,23 +150,80 @@ function searchUser(user){
   dispatch.call('userInfo', userNode[0], userNode[0]);
 }
 
-function createWidget(max, circleScale) {
-  //there is 5 different circle values
-  var sWidth = 300
-  var sHeight = 60
+function createWidget(max, circleScale, simulation) {
+
+  var sWidth = 400
+  var sHeight = 80
   var maximumRadius = circleScale(max)
-  var spaceOut = 8
+  var spaceOut = 20
   var translation = maximumRadius + spaceOut/2
+  
+  //there is 5 different circle values
   var sg = d3.select('#sizeWidget').append('svg').attr('id', 'sizeSvg').attr('width', sWidth).attr('height', sHeight).append('g')
+  var descriptions = ['[0-15]', '[16-30]', '[31-45]', '[46-60]', '[61-76]']
   for(i=0; i<5; i++){
     var r = circleScale(i*15+1)
-    sg.append('circle').attr('class', 'users').attr('r', r).attr('fill', color(0)).attr('cx', sWidth*0.1+ translation + i*(spaceOut + 2*maximumRadius)).attr('cy', sHeight/2)
+    circle = sg.append('circle').attr('class', 'users').attr('r', r).attr('fill', color(0)).attr('cx', sWidth*0.1+ translation + i*(spaceOut + 2*maximumRadius)).attr('cy', sHeight/2)
+    .on('click', function(){reconfigureRadius(simulation, d3.select(this).attr('r'))})
+    //couldn't find a way to center the middle of the word with the middle of the circle
+    sg.append('text').attr('class', 'colorNames').attr('x',  sWidth*0.1+ translation - descriptions[i]["length"]*3 + i*(spaceOut + 2*maximumRadius)).attr('y', sHeight - 5).text(descriptions[i])
   }
+  
   //there is 6 different color values
   var cg = d3.select('#colorWidget').append('svg').attr('id', 'colorSvg').attr('width', sWidth).attr('height', sHeight).append('g')
+  var descriptions = ['Me', 'CVG', 'Natação' , 'Técnico', 'Familia', 'Outros']
   for(i=0; i<6; i++){
     cg.append('circle').attr('class', 'users').attr('r', circleScale(max)).attr('fill', color(i)).attr('cx', sWidth*0.1 + i*(spaceOut + 2*maximumRadius)).attr('cy', sHeight/2)
+    .on('click', function(){reconfigureColor(simulation, d3.select(this).attr('fill'))})
+    cg.append('text').attr('class', 'colorNames').attr('x',translation - descriptions[i]["length"]*2 + i*(spaceOut + 2*maximumRadius)).attr('y', sHeight).text(descriptions[i])
   }
+}
+
+function reconfigureRadius(simulation, radius){
+  currentNodes = nodes.filter(function(d) {
+    if(d.id == 'anasofia163'){console.log(circleScale(d.commonNumber));console.log(radius);console.log(circleScale(d.commonNumber) != radius);}
+    if(circleScale(d.commonNumber) != radius) {return true}
+    else { d3.select("circle[id=\'" + d.id+"\']").remove();}
+    })
+    
+  currentLinks = links.filter(function(d) {
+    if(circleScale(d.source.commonNumber) == radius) {
+      d3.selectAll("line[source=\'" + d.source.id + "\']").remove()
+      d3.selectAll("line[target=\'" + d.source.id + "\']").remove()
+    }
+    else if(circleScale(d.target.commonNumber) == radius){
+      d3.selectAll("line[target=\'" + d.target.id + "\']").remove()
+    }
+    return false
+    })
+    
+  simulation.force('charge', d3.forceManyBody().strength(-20))
+  .force('link', d3.forceLink(links).id(d => d.id).distance(100))
+  .force('center', d3.forceCenter(width/2, height/2))
+  .force('collide', d3.forceCollide(10)).restart();
+}
+
+function reconfigureColor(simulation, c){
+  currentNodes = nodes.filter(function(d) {
+    if(color(d.group) != c) {return true}
+    else { d3.select("circle[id=\'" + d.id+"\']").remove();}
+    })
+    
+  currentLinks = links.filter(function(d) {
+    if(color(d.source.group) == c) {
+      d3.selectAll("line[source=\'" + d.source.id + "\']").remove()
+      d3.selectAll("line[target=\'" + d.source.id + "\']").remove()
+    }
+    else if(circleScale(d.target.commonNumber) == c){
+      d3.selectAll("line[target=\'" + d.target.id + "\']").remove()
+    }
+    return false
+    })
+    
+  simulation.force('charge', d3.forceManyBody().strength(-20))
+  .force('link', d3.forceLink(links).id(d => d.id).distance(100))
+  .force('center', d3.forceCenter(width/2, height/2))
+  .force('collide', d3.forceCollide(10)).restart();
 }
 
 
