@@ -21,20 +21,20 @@ function genViz() {
   
   var max = d3.max(dataset, function(d) {return d.commonNumber})
   //5:0-15    7:16-30   10:30-45  15:46-60   18:61-76
-  circleScale = d3.scaleQuantize().domain([0,max]).range([4,8,12,16,20])
+  circleScale = d3.scaleQuantize().domain([0,max]).range([3,6,9,12,15])
   
-  width = 1900
-  height = 1080
+  width = 1000
+  height = 880
   
   simulation = d3.forceSimulation(nodes)
-  .force('charge', d3.forceManyBody().strength(-70))
-  .force('link', d3.forceLink(links).id(d => d.id).distance(200))
+  .force('charge', d3.forceManyBody().strength(-50))
+  .force('link', d3.forceLink(links).id(d => d.id).distance(120))
   .force('center', d3.forceCenter(width/2, height/2))
   .force('collide', d3.forceCollide(10))
 
   createWidget(max, circleScale, simulation)
   
-  var svg = d3.select('#network').append('svg').attr('width', width).attr('height', height).on('click', function(){d3.selectAll('line').attr('class', 'untouchedline').attr('stroke', 'grey')})
+  var svg = d3.select('#network').append('svg').attr('class', 'networkSvg').attr('width', width).attr('height', height).on('click', function(){d3.selectAll('line').attr('class', 'untouchedline').attr('stroke', 'grey')})
   
   //Brush
   var brush = svg.append('g').attr('class', 'brush')
@@ -150,32 +150,34 @@ function searchUser(user){
   dispatch.call('userInfo', userNode[0], userNode[0]);
 }
 
+
+//THIS FUNCTION WAS A LITTLE BIT HARDCODED
 function createWidget(max, circleScale, simulation) {
 
   var sWidth = 400
   var sHeight = 80
   var maximumRadius = circleScale(max)
-  var spaceOut = 20
+  var spaceOut = 15
   var translation = maximumRadius + spaceOut/2
   
   //there is 5 different circle values
   var sg = d3.select('#sizeWidget').append('svg').attr('id', 'sizeSvg').attr('width', sWidth).attr('height', sHeight).append('g')
-  var descriptions = ['[0-15]', '[16-30]', '[31-45]', '[46-60]', '[61-76]']
+  var descriptions = ['0-15', '16-30', '31-45', '46-60', '61-76']
   for(i=0; i<5; i++){
     var r = circleScale(i*15+1)
-    circle = sg.append('circle').attr('class', 'users').attr('r', r).attr('fill', color(0)).attr('cx', sWidth*0.1+ translation + i*(spaceOut + 2*maximumRadius)).attr('cy', sHeight/2)
+    circle = sg.append('circle').attr('class', 'users').attr('r', r).attr('fill', color(0)).attr('cx', sWidth*0.1+ translation + i*(spaceOut + 2*maximumRadius)).attr('cy', sHeight/3)
     .on('click', function(){reconfigureRadius(simulation, d3.select(this).attr('r'))})
     //couldn't find a way to center the middle of the word with the middle of the circle
-    sg.append('text').attr('class', 'colorNames').attr('x',  sWidth*0.1+ translation - descriptions[i]["length"]*3 + i*(spaceOut + 2*maximumRadius)).attr('y', sHeight - 5).text(descriptions[i])
+    sg.append('text').attr('class', 'colorNames').attr('x',  sWidth*0.1+ translation - descriptions[i]["length"]*3 + i*(spaceOut + 2*maximumRadius)).attr('y', sHeight*3/4).text(descriptions[i])
   }
   
   //there is 6 different color values
   var cg = d3.select('#colorWidget').append('svg').attr('id', 'colorSvg').attr('width', sWidth).attr('height', sHeight).append('g')
-  var descriptions = ['Me', 'CVG', 'Natação' , 'Técnico', 'Familia', 'Outros']
+  var descriptions = ['Me', 'CVG', 'Swim' , 'Técnico', 'Family', 'Elsewhere']
   for(i=0; i<6; i++){
-    cg.append('circle').attr('class', 'users').attr('r', circleScale(max)).attr('fill', color(i)).attr('cx', sWidth*0.1 + i*(spaceOut + 2*maximumRadius)).attr('cy', sHeight/2)
+    cg.append('circle').attr('class', 'users').attr('r', circleScale(max)).attr('fill', color(i)).attr('cx', sWidth*0.1 + i*(spaceOut + 2*maximumRadius)).attr('cy', sHeight/3)
     .on('click', function(){reconfigureColor(simulation, d3.select(this).attr('fill'))})
-    cg.append('text').attr('class', 'colorNames').attr('x',translation - descriptions[i]["length"]*2 + i*(spaceOut + 2*maximumRadius)).attr('y', sHeight).text(descriptions[i])
+    cg.append('text').attr('class', 'colorNames').attr('x',7.5 +translation - descriptions[i]["length"] + i*(spaceOut + 2*maximumRadius)).attr('y', sHeight*3/4).text(descriptions[i])
   }
 }
 
@@ -198,9 +200,9 @@ function reconfigureRadius(simulation, radius){
     })
     
   simulation.force('charge', d3.forceManyBody().strength(-20))
-  .force('link', d3.forceLink(links).id(d => d.id).distance(100))
+  .force('link', d3.forceLink(currentLinks).id(d => d.id).distance(100))
   .force('center', d3.forceCenter(width/2, height/2))
-  .force('collide', d3.forceCollide(10)).restart();
+  .force('collide', d3.forceCollide(10)).alphaTarget(1).restart();
 }
 
 function reconfigureColor(simulation, c){
@@ -220,10 +222,10 @@ function reconfigureColor(simulation, c){
     return false
     })
     
-  simulation.force('charge', d3.forceManyBody().strength(-20))
-  .force('link', d3.forceLink(links).id(d => d.id).distance(100))
+  simulation.force('charge', d3.forceManyBody())
+  .force('link', d3.forceLink(currentLinks).id(d => d.id).distance(0))
   .force('center', d3.forceCenter(width/2, height/2))
-  .force('collide', d3.forceCollide(10)).restart();
+  .force('collide', d3.forceCollide(10)).alphaTarget(0.2).restart();
 }
 
 

@@ -4,16 +4,17 @@
     <script src = "friendsNetwork.js" ></script>
     <link rel="stylesheet" href="network.css">
     <body>
-        <div id = "network"></div>
-        <input type="search" id = "input" name = "f" onkeypress="checkIfEnter(event)">
-        <div id = 'widget'>
-            <div id = 'sizeWidget'>
-                <span>Number of Mutual Common Friends</span>
-            </div>
-            <div id = 'colorWidget'>
-                <span>Where I met them</span>
+        <div id = "network">
+            <div id = 'widget'>
+                <div id = 'sizeWidget'>
+                    <span>Number of Mutual Common Friends</span>
+                </div>
+                <div id = 'colorWidget'>
+                    <span>Where I met them</span>
+                </div>
             </div>
         </div>
+        <input type="search" id = "input" name = "f" onkeypress="checkIfEnter(event)">
     </body>
     <script>
         function checkIfEnter(event) {
