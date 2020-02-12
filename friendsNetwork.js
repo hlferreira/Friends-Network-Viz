@@ -1,8 +1,13 @@
 var dataset;
 var simulation;
 var dispatch = d3.dispatch('userInfo')
-nodes = [];
-links = [];
+
+
+var nodes = [];
+var links = [];
+
+var currentNodes
+var currentLinks
 
 color = d3.scaleOrdinal(d3.schemeTableau10)
 
@@ -17,9 +22,13 @@ function genViz() {
   
   
   console.log(nodes);
+  console.log(currentNodes);
   console.log(links);
+  console.log(currentLinks);
   
-  var max = d3.max(dataset, function(d) {return d.commonNumber})
+
+  //ignore first element beacuse it is the center piece
+  var max = d3.max(dataset, function(d) {if(d != dataset[0]) return d.commonNumber})
   //5:0-15    7:16-30   10:30-45  15:46-60   18:61-76
   circleScale = d3.scaleQuantize().domain([0,max]).range([3,6,9,12,15])
   
@@ -168,11 +177,14 @@ function createWidget(max, circleScale, simulation) {
   
   //there is 5 different circle values
   var sg = d3.select('#sizeWidget').append('svg').attr('id', 'sizeSvg').attr('width', sWidth).attr('height', sHeight).append('g')
-  var descriptions = ['0-15', '16-30', '31-45', '46-60', '61-76']
+  var descriptions = ['0-15', '16-30', '31-46', '47-61', '62-77']
   for(i=0; i<5; i++){
-    var r = circleScale(i*15+1)
+    var r = circleScale(i*15+2)
     circle = sg.append('circle').attr('class', 'users').attr('r', r).attr('fill', color(0)).attr('cx', sWidth*0.1+ translation + i*(spaceOut + 2*maximumRadius)).attr('cy', sHeight/3)
-    .on('click', function(){reconfigureRadius(simulation, d3.select(this).attr('r'))})
+    .on('click', function(){
+      reconfigureRadius(simulation, d3.select(this).attr('r'))
+      d3.select(this).attr('fill', '#99aab5')
+    })
     //couldn't find a way to center the middle of the word with the middle of the circle
     sg.append('text').attr('class', 'colorNames').attr('x',  sWidth*0.1+ translation - descriptions[i]["length"]*3 + i*(spaceOut + 2*maximumRadius)).attr('y', sHeight*3/4).text(descriptions[i])
   }
@@ -182,56 +194,67 @@ function createWidget(max, circleScale, simulation) {
   var descriptions = ['Me', 'CVG', 'Swim' , 'Técnico', 'Family', 'Elsewhere']
   for(i=0; i<6; i++){
     cg.append('circle').attr('class', 'users').attr('r', circleScale(max)).attr('fill', color(i)).attr('cx', sWidth*0.1 + i*(spaceOut + 2*maximumRadius)).attr('cy', sHeight/3)
-    .on('click', function(){reconfigureColor(simulation, d3.select(this).attr('fill'))})
+    .on('click', function(){
+      reconfigureColor(simulation, d3.select(this).attr('fill'))
+      d3.select(this).attr('fill', '#99aab5')
+    })
     cg.append('text').attr('class', 'colorNames').attr('x',7.5 +translation - descriptions[i]["length"] + i*(spaceOut + 2*maximumRadius)).attr('y', sHeight*3/4).text(descriptions[i])
   }
 }
 
 function reconfigureRadius(simulation, radius){
-  currentNodes = nodes.filter(function(d) {
-    if(d.id == 'anasofia163'){console.log(circleScale(d.commonNumber));console.log(radius);console.log(circleScale(d.commonNumber) != radius);}
-    if(circleScale(d.commonNumber) != radius) {return true}
+  currentNodes = currentNodes.filter(function(d) {
+    if(circleScale(d.commonNumber) != radius || d.id == nodes[0].id) {return true}
     else { d3.select("circle[id=\'" + d.id+"\']").remove();}
     })
     
-  currentLinks = links.filter(function(d) {
-    if(circleScale(d.source.commonNumber) == radius) {
+  currentLinks = currentLinks.filter(function(d) {
+    if(circleScale(d.source.commonNumber) == radius && d.source.id != nodes[0].id) {
       d3.selectAll("line[source=\'" + d.source.id + "\']").remove()
       d3.selectAll("line[target=\'" + d.source.id + "\']").remove()
+      return false
     }
     else if(circleScale(d.target.commonNumber) == radius){
       d3.selectAll("line[target=\'" + d.target.id + "\']").remove()
+      return false
     }
-    return false
+    return true
     })
     
-  simulation.force('charge', d3.forceManyBody().strength(-20))
+  simulation.force('charge', d3.forceManyBody().strength(-30))
   .force('link', d3.forceLink(currentLinks).id(d => d.id).distance(100))
   .force('center', d3.forceCenter(width/2, height/2))
-  .force('collide', d3.forceCollide(10)).alphaTarget(1).restart();
+  .force('collide', d3.forceCollide(10)).alphaTarget(0.2).restart();
+
+  setTimeout(function() {simulation.stop()}, 20000)
+
 }
 
 function reconfigureColor(simulation, c){
-  currentNodes = nodes.filter(function(d) {
+  currentNodes = currentNodes.filter(function(d) {
     if(color(d.group) != c) {return true}
-    else { d3.select("circle[id=\'" + d.id+"\']").remove();}
+    else {d3.select("circle[id=\'" + d.id+"\']").remove();}
     })
-    
-  currentLinks = links.filter(function(d) {
+
+  currentLinks = currentLinks.filter(function(d) {
     if(color(d.source.group) == c) {
       d3.selectAll("line[source=\'" + d.source.id + "\']").remove()
       d3.selectAll("line[target=\'" + d.source.id + "\']").remove()
+      return false
     }
-    else if(circleScale(d.target.commonNumber) == c){
+    else if(color(d.target.group) == c){
       d3.selectAll("line[target=\'" + d.target.id + "\']").remove()
+      return false
     }
-    return false
+    return true
     })
     
-  simulation.force('charge', d3.forceManyBody())
-  .force('link', d3.forceLink(currentLinks).id(d => d.id).distance(0))
+  simulation.force('charge', d3.forceManyBody().strength(-10))
+  .force('link', d3.forceLink(currentLinks).id(d => d.id).distance(100))
   .force('center', d3.forceCenter(width/2, height/2))
   .force('collide', d3.forceCollide(10)).alphaTarget(0.2).restart();
+
+  setTimeout(function() {simulation.stop()}, 20000)
 }
 
 
@@ -252,4 +275,6 @@ function jsonFix() {
     }
     passedUsers.push(dataset[n].node)
   }
+  currentNodes = nodes
+  currentLinks = links
 }
