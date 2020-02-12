@@ -65,12 +65,18 @@ function genViz() {
     var tooltip = d3.select('body').append('div').attr('class', 'tooltip')
     tooltip.transition().duration(100)
 
-    tooltip.html("User: ".bold() + d.id + "<br/>" + "Instagram: ".bold() + "<a href='https://www.instagram.com/" + d.id + "\'" + ">" + d.id + "</a>")
+    tooltip.html("<div class = 'tooltipContainer'>"
+        + "<div class = 'profileInfo'>"
+        + "<a class = 'profileName'>" + d.id + "</a>"
+        + "<a class = 'realName'>" + d.name + "</a>"
+        + "</div>"
+        + "<a class = 'profileButton' href='https://www.instagram.com/" + d.id + "\'" + "> Profile </a>"
+        + "</div>")
           .style('left', (d3.event.pageX + 15) + "px").style('top', (d3.event.pageY - 40) + "px")
   })
   .on('mouseout', function() {
     var tooltip = d3.select('.tooltip')
-    tooltip.transition().duration(800).remove()
+    tooltip.transition().duration(2000).remove()
   })
   .on('click', function(d){ dispatch.call('userInfo', d,d);d3.event.stopPropagation();})
   .call(d3.drag().on('start', dragStart).on('drag', dragged))
@@ -233,7 +239,7 @@ function reconfigureColor(simulation, c){
 function jsonFix() {
   var passedUsers = []
   for (n in dataset) {
-    nodes.push({"id": dataset[n].node, "commonNumber": dataset[n].commonNumber, "group": dataset[n].group, "selected": false});  
+    nodes.push({"id": dataset[n].node, "name": dataset[n].name,"commonNumber": dataset[n].commonNumber, "group": dataset[n].group, "selected": false});  
     for (i in dataset[n].followers) {
       
       var user = dataset[n].followers[i]
