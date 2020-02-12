@@ -147,3 +147,20 @@ line {
     text-align: center;
     top: 80px;
 }
+
+#description{
+    position: absolute;
+    bottom: 20%;
+    left: 32%;
+}
+
+#dotAndCircle{
+    position: flex;
+    flex-direction: column;
+}
+
+.descriptionText {
+    line-height: 10px;
+    font-size: 8pt;
+    padding-left: 2pt;
+}

@@ -60,7 +60,6 @@ function genViz() {
   .attr('source', function(d) {return d.source.id})
   .attr('target', function(d) {return d.target.id})
   .attr('fill', 'grey')
-  .attr('stroke-width', 1)
   
   var node = svg.append('g')
   .selectAll('circle')
@@ -200,6 +199,15 @@ function createWidget(max, circleScale, simulation) {
     })
     cg.append('text').attr('class', 'colorNames').attr('x',7.5 +translation - descriptions[i]["length"] + i*(spaceOut + 2*maximumRadius)).attr('y', sHeight*3/4).text(descriptions[i])
   }
+
+
+  //create nodes and circle description
+  w = 150, h = 80 
+  var svgDC = d3.select('#dotAndCircle').append('svg').attr('width', w).attr('height', h)
+  svgDC.append('g').append('circle').attr('id', 'circleDescritpion').attr('r', 10).attr('cx', w/10).attr('cy', h/3).attr('fill', color(0))
+  svgDC.append('text').attr('class', 'descriptionText').attr('x', w/5 + 10).attr('y', h/3 + 2).text('My Instagram Friends')
+  svgDC.append('g').append('line').attr('id', 'lineDescritpion').attr('x1', w/10 - 10).attr('y1', h*2/3).attr('x2', w/10 + 10).attr('y2', h*2/3).attr('stroke','grey').style('stroke-width', 3)
+  svgDC.append('text').attr('class', 'descriptionText').attr('x', w/5 + 10).attr('y', h*2/3 + 2).text('Mutual follow')
 }
 
 function reconfigureRadius(simulation, radius){
