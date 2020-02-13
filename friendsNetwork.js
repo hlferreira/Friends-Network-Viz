@@ -9,6 +9,8 @@ var links = [];
 var currentNodes
 var currentLinks
 
+var userSelected = "";
+
 color = d3.scaleOrdinal(d3.schemeTableau10)
 
 d3.json("instagramFriendsNetwork.json").then(function(data) {
@@ -152,10 +154,13 @@ simulation.on('tick', function (d) {
 
 dispatch.on('userInfo', function(d){
   unselectedLines = d3.selectAll("line").attr('stroke', 'grey').attr('class', 'unselectedLine')
-  selectedLineSource = d3.selectAll("line[source=\'" + d.id + "\']")
-  selectedLineTarget = d3.selectAll("line[target=\'" + d.id + "\']")
-  selectedLineSource.attr('class', "selectedLine").attr('stroke', color(d.group)).raise()
-  selectedLineTarget.attr('class', "selectedLine").attr('stroke', color(d.group)).raise()
+  if(userSelected != d.id){
+    selectedLineSource = d3.selectAll("line[source=\'" + d.id + "\']")
+    selectedLineTarget = d3.selectAll("line[target=\'" + d.id + "\']")
+    selectedLineSource.attr('class', "selectedLine").attr('stroke', color(d.group)).raise()
+    selectedLineTarget.attr('class', "selectedLine").attr('stroke', color(d.group)).raise()
+  }
+  userSelected = d.id;
 });
 
 function searchUser(user){
