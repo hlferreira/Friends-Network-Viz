@@ -2,14 +2,18 @@ var dataset;
 var simulation;
 var dispatch = d3.dispatch('userInfo')
 
-
-var nodes = [];
-var links = [];
+var node; //html elements
+var link; //html elements
+var nodes = []; //node data
+var links = []; //link data
 
 var currentNodes
 var currentLinks
 
 var userSelected = "";
+
+var filterRadius = []
+var filterColor = []
 
 color = d3.scaleOrdinal(d3.schemeTableau10)
 
@@ -54,35 +58,25 @@ function genViz() {
               .on('brush', brushed)
               .on('end', bEnd));
 
-  var link = svg.append('g').attr("stroke", "#999")
+  link = svg.append('g').attr('class','networkLines')
+  .attr("stroke", "#999")
   .attr("stroke-opacity", 0.6)
   .selectAll('line')
-  .data(links).join('line')
+  .data(currentLinks).join('line')
   .attr('class', 'links')
   .attr('source', function(d) {return d.source.id})
   .attr('target', function(d) {return d.target.id})
   .attr('fill', 'grey')
   
-  var node = svg.append('g')
+  node = svg.append('g').attr('class', 'networkCircles')
   .selectAll('circle')
-  .data(nodes).join('circle')
+  .data(currentNodes).join('circle')
   .attr('class', 'users')
   .attr('id', function (d) {return d.id})
   .attr('r', function (d) {if(d.id == dataset[0].node) return 20; else return circleScale(d.commonNumber)})
   .attr('fill', function(d) {return color(d.group)})
   .on('mouseover', function(d) {
-    d3.select('.tooltip').remove()
-    var tooltip = d3.select('body').append('div').attr('class', 'tooltip')
-    tooltip.transition().duration(100)
-
-    tooltip.html("<div class = 'tooltipContainer'>"
-        + "<div class = 'profileInfo'>"
-        + "<a class = 'profileName'>" + d.id + "</a>"
-        + "<a class = 'realName'>" + d.name + "</a>"
-        + "</div>"
-        + "<a class = 'profileButton' href='https://www.instagram.com/" + d.id + "\'" + "> Profile </a>"
-        + "</div>")
-          .style('left', (d3.event.pageX + 15) + "px").style('top', (d3.event.pageY - 40) + "px")
+    mouseover(d)
   })
   .on('mouseout', function() {
     var tooltip = d3.select('.tooltip')
@@ -101,7 +95,8 @@ simulation.on('tick', function (d) {
 });
 
   function bStart(){
-    console.log('brush has started')
+    //node.attr('class', 'users');
+    console.log('here')
   }
 
   function brushed(){
@@ -187,7 +182,10 @@ function createWidget(max, circleScale, simulation) {
     circle = sg.append('circle').attr('class', 'users').attr('r', r).attr('fill', color(0)).attr('cx', sWidth*0.1+ translation + i*(spaceOut + 2*maximumRadius)).attr('cy', sHeight/3)
     .on('click', function(){
       reconfigureRadius(simulation, d3.select(this).attr('r'))
-      d3.select(this).attr('fill', '#99aab5')
+      if(d3.select(this).attr('fill') != '#99aab5')
+        d3.select(this).attr('fill', '#99aab5')
+      else
+        d3.select(this).attr('fill', color(0))
     })
     //couldn't find a way to center the middle of the word with the middle of the circle
     sg.append('text').attr('class', 'colorNames').attr('x',  sWidth*0.1+ translation - descriptions[i]["length"]*3 + i*(spaceOut + 2*maximumRadius)).attr('y', sHeight*3/4).text(descriptions[i])
@@ -195,12 +193,15 @@ function createWidget(max, circleScale, simulation) {
   
   //there is 6 different color values
   var cg = d3.select('#colorWidget').append('svg').attr('id', 'colorSvg').attr('width', sWidth).attr('height', sHeight).append('g')
-  var descriptions = ['Me', 'CVG', 'Swim' , 'Técnico', 'Family', 'Elsewhere']
+  descriptions = ['Me', 'CVG', 'Swim' , 'Técnico', 'Family', 'Elsewhere']
   for(i=0; i<6; i++){
-    cg.append('circle').attr('class', 'users').attr('r', circleScale(max)).attr('fill', color(i)).attr('cx', sWidth*0.1 + i*(spaceOut + 2*maximumRadius)).attr('cy', sHeight/3)
+    cg.append('circle').attr('class', 'users').attr('r', circleScale(max)).attr('fill', color(i)).attr('cx', sWidth*0.1 + i*(spaceOut + 2*maximumRadius)).attr('cy', sHeight/3).attr('title', descriptions[i])
     .on('click', function(){
-      reconfigureColor(simulation, d3.select(this).attr('fill'))
-      d3.select(this).attr('fill', '#99aab5')
+      reconfigureColor(simulation, color(descriptions.indexOf(d3.select(this).attr('title'))))
+      if(d3.select(this).attr('fill') != '#99aab5')
+        d3.select(this).attr('fill', '#99aab5')
+      else
+        d3.select(this).attr('fill', color(descriptions.indexOf(d3.select(this).attr('title'))))  
     })
     cg.append('text').attr('class', 'colorNames').attr('x',7.5 +translation - descriptions[i]["length"] + i*(spaceOut + 2*maximumRadius)).attr('y', sHeight*3/4).text(descriptions[i])
   }
@@ -216,23 +217,67 @@ function createWidget(max, circleScale, simulation) {
 }
 
 function reconfigureRadius(simulation, radius){
-  currentNodes = currentNodes.filter(function(d) {
-    if(circleScale(d.commonNumber) != radius || d.id == nodes[0].id) {return true}
-    else { d3.select("circle[id=\'" + d.id+"\']").remove();}
+  if(filterRadius.indexOf(radius) != -1) {
+    links.filter(function(d){
+      if((circleScale(d.source.commonNumber) == radius && d.source.id != nodes[0].id) || circleScale(d.target.commonNumber) == radius){
+        currentLinks.push(d)
+      }
+    })
+
+    link = d3.select('.networkLines').selectAll('line').data(currentLinks).join('line')
+        .attr('class', 'links')
+        .attr('source', function(d) {return d.source.id})
+        .attr('target', function(d) {return d.target.id})
+        .attr('fill', 'grey')
+
+
+    nodes.filter(function(d){
+      if(radius == circleScale(d.commonNumber)){
+        currentNodes.push(d)
+      }
+    })
+
+
+    node = d3.select('.networkCircles').selectAll('circle')
+        .data(currentNodes)
+        .join('circle')
+        .attr('class', 'users')
+        .attr('id', function (d) {return d.id})
+        .attr('r', function (d) {if(d.id == dataset[0].node) return 20; else return circleScale(d.commonNumber)})
+        .attr('fill', function(d) {return color(d.group)})
+        .on('mouseover', function(d) {
+          mouseover(d)
+        })
+        .on('mouseout', function() {
+          var tooltip = d3.select('.tooltip')
+          tooltip.transition().duration(2000).remove()
+        })
+        .on('click', function(d){ dispatch.call('userInfo', d,d);d3.event.stopPropagation();})
+        //.call(d3.drag().on('start', dragStart).on('drag', dragged))*/
+
+    filterRadius.splice(filterRadius.indexOf(radius),1)
+  }
+  else{
+    currentNodes = currentNodes.filter(function(d) {
+      if(circleScale(d.commonNumber) != radius || d.id == nodes[0].id) {return true}
+      else { d3.select("circle[id=\'" + d.id+"\']").remove();}
     })
     
-  currentLinks = currentLinks.filter(function(d) {
-    if(circleScale(d.source.commonNumber) == radius && d.source.id != nodes[0].id) {
-      d3.selectAll("line[source=\'" + d.source.id + "\']").remove()
-      d3.selectAll("line[target=\'" + d.source.id + "\']").remove()
-      return false
-    }
-    else if(circleScale(d.target.commonNumber) == radius){
-      d3.selectAll("line[target=\'" + d.target.id + "\']").remove()
-      return false
-    }
-    return true
+    
+    currentLinks = currentLinks.filter(function(d) {
+      if(circleScale(d.source.commonNumber) == radius && d.source.id != nodes[0].id) {
+        d3.selectAll("line[source=\'" + d.source.id + "\']").remove()
+        d3.selectAll("line[target=\'" + d.source.id + "\']").remove()
+        return false
+      }
+      else if(circleScale(d.target.commonNumber) == radius){
+        d3.selectAll("line[target=\'" + d.target.id + "\']").remove()
+        return false
+      }
+      return true
     })
+    filterRadius.push(radius);
+  }
     
   simulation.force('charge', d3.forceManyBody().strength(-30))
   .force('link', d3.forceLink(currentLinks).id(d => d.id).distance(100))
@@ -244,23 +289,68 @@ function reconfigureRadius(simulation, radius){
 }
 
 function reconfigureColor(simulation, c){
-  currentNodes = currentNodes.filter(function(d) {
-    if(color(d.group) != c) {return true}
-    else {d3.select("circle[id=\'" + d.id+"\']").remove();}
+
+  if(filterColor.indexOf(c) != -1) {
+    links.filter(function(d){
+      if(color(d.source.group) == c || color(d.target.group) == c){
+        currentLinks.push(d)
+      }
     })
 
-  currentLinks = currentLinks.filter(function(d) {
-    if(color(d.source.group) == c) {
-      d3.selectAll("line[source=\'" + d.source.id + "\']").remove()
-      d3.selectAll("line[target=\'" + d.source.id + "\']").remove()
-      return false
-    }
-    else if(color(d.target.group) == c){
-      d3.selectAll("line[target=\'" + d.target.id + "\']").remove()
-      return false
-    }
-    return true
+    link = d3.select('.networkLines').selectAll('line').data(currentLinks).join('line')
+        .attr('class', 'links')
+        .attr('source', function(d) {return d.source.id})
+        .attr('target', function(d) {return d.target.id})
+        .attr('fill', 'grey')
+
+
+    nodes.filter(function(d){
+      if(color(d.group) == c){
+        currentNodes.push(d)
+      }
     })
+
+
+    node = d3.select('.networkCircles').selectAll('circle')
+        .data(currentNodes)
+        .join('circle')
+        .attr('class', 'users')
+        .attr('id', function (d) {return d.id})
+        .attr('r', function (d) {if(d.id == dataset[0].node) return 20; else return circleScale(d.commonNumber)})
+        .attr('fill', function(d) {return color(d.group)})
+        .on('mouseover', function(d) {
+          mouseover(d);
+        })
+        .on('mouseout', function() {
+          var tooltip = d3.select('.tooltip')
+          tooltip.transition().duration(2000).remove()
+        })
+        .on('click', function(d){ dispatch.call('userInfo', d,d);d3.event.stopPropagation();})
+        //.call(d3.drag().on('start', dragStart).on('drag', dragged))*/
+
+    filterColor.splice(filterColor.indexOf(c),1)
+  }
+  else{
+    currentNodes = currentNodes.filter(function(d) {
+      if(color(d.group) != c) {return true}
+      else {d3.select("circle[id=\'" + d.id+"\']").remove();}
+      })
+
+    currentLinks = currentLinks.filter(function(d) {
+      if(color(d.source.group) == c) {
+        d3.selectAll("line[source=\'" + d.source.id + "\']").remove()
+        d3.selectAll("line[target=\'" + d.source.id + "\']").remove()
+        return false
+      }
+      else if(color(d.target.group) == c){
+        d3.selectAll("line[target=\'" + d.target.id + "\']").remove()
+        return false
+      }
+      return true
+    })
+    filterColor.push(c);
+
+  }
     
   simulation.force('charge', d3.forceManyBody().strength(-10))
   .force('link', d3.forceLink(currentLinks).id(d => d.id).distance(100))
@@ -270,6 +360,20 @@ function reconfigureColor(simulation, c){
   setTimeout(function() {simulation.stop()}, 20000)
 }
 
+
+function mouseover(d) {
+  d3.select('.tooltip').remove();
+  var tooltip = d3.select('body').append('div').attr('class', 'tooltip');
+  tooltip.transition().duration(100);
+  tooltip.html("<div class = 'tooltipContainer'>"
+    + "<div class = 'profileInfo'>"
+    + "<a class = 'profileName'>" + d.id + "</a>"
+    + "<a class = 'realName'>" + d.name + "</a>"
+    + "</div>"
+    + "<a class = 'profileButton' href='https://www.instagram.com/" + d.id + "\'" + "> Profile </a>"
+    + "</div>")
+    .style('left', (d3.event.pageX + 15) + "px").style('top', (d3.event.pageY - 40) + "px");
+}
 
 //this function is only here because i was lazy doing the JSON file
 function jsonFix() {
