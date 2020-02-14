@@ -1,9 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html onmousedown="checkIfCtrl(event)">
     <script src = "https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
     <script src = "friendsNetwork.js" ></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="network.css">
     <body>
+        <div id = "header">
+            <div id = "headerContainer">
+                <div id = "profilePic">
+                    <img src="perfil.jpg">
+                </div>
+                <div id = "profileDescription">
+                    <a id = "userName">hlferreira27</a>
+                    <div id = "profileStats">
+                        <div class = "userStats">
+                            <a class="userStatsNumbers">18</a>
+                            <a class="userStatsText">posts</a>
+                        </div>
+                        <div class = "userStats">
+                            <a class="userStatsNumbers">197</a>
+                            <a class="userStatsText">friends</a>
+                        </div>
+                    </div>
+                    <div id = "profileText">
+                        <a id = "name">Henrique Ferreira</a>
+                        <a id = "textDescription">Visualization of my friends network</a>
+                    </div>
+                </div>
+            </div>
+            <input type="search" id = "input" name = "f" onkeypress="checkIfEnter(event)">
+        </div>
         <div id = "network">
             <div id = 'widget'>
                 <div id = 'sizeWidget'>
@@ -17,10 +43,11 @@
                 <div id = "dotAndCircle"></div>
             </div>
         </div>
-        <input type="search" id = "input" name = "f" onkeypress="checkIfEnter(event)">
     </body>
     <script>
         function checkIfEnter(event) {
+            console.log(event.key);
+            
             if(event.key == 'Enter' && event.key != undefined){
                 input = document.getElementById('input')
                 if(input.value != ""){
@@ -28,6 +55,9 @@
                 }
                 input.value = "";
             }
+        }
+        function checkIfCtrl(event) {
+            console.log(event);
         }
         </script>
 </html>

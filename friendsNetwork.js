@@ -82,7 +82,14 @@ function genViz() {
     var tooltip = d3.select('.tooltip')
     tooltip.transition().duration(2000).remove()
   })
-  .on('click', function(d){ dispatch.call('userInfo', d,d);d3.event.stopPropagation();})
+  .on('click', function(d){
+    if(d3.event.ctrlKey) {
+      if(d.selected){d.selected = false; d3.select(this).attr('class', 'users')}
+      else{d.selected = true; d3.select(this).attr('class', 'brushSelected')}
+    }
+    else
+    { dispatch.call('userInfo', d,d);
+      d3.event.stopPropagation();}})
   .call(d3.drag().on('start', dragStart).on('drag', dragged))
 
 simulation.on('tick', function (d) {
@@ -154,8 +161,10 @@ dispatch.on('userInfo', function(d){
     selectedLineTarget = d3.selectAll("line[target=\'" + d.id + "\']")
     selectedLineSource.attr('class', "selectedLine").attr('stroke', color(d.group)).raise()
     selectedLineTarget.attr('class', "selectedLine").attr('stroke', color(d.group)).raise()
+    userSelected = d.id;
   }
-  userSelected = d.id;
+  else
+    userSelected = "";
 });
 
 function searchUser(user){
@@ -177,8 +186,10 @@ function createWidget(max, circleScale, simulation) {
   //there is 5 different circle values
   var sg = d3.select('#sizeWidget').append('svg').attr('id', 'sizeSvg').attr('width', sWidth).attr('height', sHeight).append('g')
   var descriptions = ['0-15', '16-30', '31-46', '47-61', '62-77']
+
   for(i=0; i<5; i++){
     var r = circleScale(i*15+2)
+    
     circle = sg.append('circle').attr('class', 'users').attr('r', r).attr('fill', color(0)).attr('cx', sWidth*0.1+ translation + i*(spaceOut + 2*maximumRadius)).attr('cy', sHeight/3)
     .on('click', function(){
       reconfigureRadius(simulation, d3.select(this).attr('r'))
@@ -187,6 +198,7 @@ function createWidget(max, circleScale, simulation) {
       else
         d3.select(this).attr('fill', color(0))
     })
+    
     //couldn't find a way to center the middle of the word with the middle of the circle
     sg.append('text').attr('class', 'colorNames').attr('x',  sWidth*0.1+ translation - descriptions[i]["length"]*3 + i*(spaceOut + 2*maximumRadius)).attr('y', sHeight*3/4).text(descriptions[i])
   }
@@ -194,6 +206,7 @@ function createWidget(max, circleScale, simulation) {
   //there is 6 different color values
   var cg = d3.select('#colorWidget').append('svg').attr('id', 'colorSvg').attr('width', sWidth).attr('height', sHeight).append('g')
   descriptions = ['Me', 'CVG', 'Swim' , 'Técnico', 'Family', 'Elsewhere']
+  
   for(i=0; i<6; i++){
     cg.append('circle').attr('class', 'users').attr('r', circleScale(max)).attr('fill', color(i)).attr('cx', sWidth*0.1 + i*(spaceOut + 2*maximumRadius)).attr('cy', sHeight/3).attr('title', descriptions[i])
     .on('click', function(){
@@ -203,6 +216,7 @@ function createWidget(max, circleScale, simulation) {
       else
         d3.select(this).attr('fill', color(descriptions.indexOf(d3.select(this).attr('title'))))  
     })
+    
     cg.append('text').attr('class', 'colorNames').attr('x',7.5 +translation - descriptions[i]["length"] + i*(spaceOut + 2*maximumRadius)).attr('y', sHeight*3/4).text(descriptions[i])
   }
 
@@ -252,7 +266,14 @@ function reconfigureRadius(simulation, radius){
           var tooltip = d3.select('.tooltip')
           tooltip.transition().duration(2000).remove()
         })
-        .on('click', function(d){ dispatch.call('userInfo', d,d);d3.event.stopPropagation();})
+        .on('click', function(d){
+          if(d3.event.ctrlKey) {
+            if(d.selected){d.selected = false; d3.select(this).attr('class', 'users')}
+            else{d.selected = true; d3.select(this).attr('class', 'brushSelected')}
+          }
+          else
+          { dispatch.call('userInfo', d,d);
+            d3.event.stopPropagation();}})
         //.call(d3.drag().on('start', dragStart).on('drag', dragged))*/
 
     filterRadius.splice(filterRadius.indexOf(radius),1)
@@ -325,7 +346,14 @@ function reconfigureColor(simulation, c){
           var tooltip = d3.select('.tooltip')
           tooltip.transition().duration(2000).remove()
         })
-        .on('click', function(d){ dispatch.call('userInfo', d,d);d3.event.stopPropagation();})
+        .on('click', function(d){
+          if(d3.event.ctrlKey) {
+            if(d.selected){d.selected = false; d3.select(this).attr('class', 'users')}
+            else{d.selected = true; d3.select(this).attr('class', 'brushSelected')}
+          }
+          else
+          { dispatch.call('userInfo', d,d);
+            d3.event.stopPropagation();}})
         //.call(d3.drag().on('start', dragStart).on('drag', dragged))*/
 
     filterColor.splice(filterColor.indexOf(c),1)
