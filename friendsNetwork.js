@@ -43,9 +43,9 @@ function genViz() {
   
   simulation = d3.forceSimulation(nodes)
   .force('charge', d3.forceManyBody().strength(-50))
-  .force('link', d3.forceLink(links).id(d => d.id).distance(120))
-  .force('center', d3.forceCenter(width/2, height/2))
-  .force('collide', d3.forceCollide(10))
+  .force('link', d3.forceLink(links).id(d => d.id).distance(80))
+  .force('center', d3.forceCenter(width/2, height/2 + 50))
+  .force('collide', d3.forceCollide(12))
 
   createWidget(max, circleScale, simulation)
   
@@ -138,7 +138,10 @@ simulation.on('tick', function (d) {
     dx = d3.event.dx;
     dy = d3.event.dy;
 
-    brushed.attr('cx', function(d) {return d.x += dx}).attr('cy', function(d) {return d.y += dy})
+    brushed.attr('cx', function(d) {if((d.x + circleScale(d.commonNumber)) <width && (d.x - circleScale(d.commonNumber))>0){return d.x += dx}
+                                    else return (d.x - circleScale(d.commonNumber))>0 ? d.x -= circleScale(d.commonNumber) : d.x += circleScale(d.commonNumber)})
+           .attr('cy', function(d) {if((d.y + circleScale(d.commonNumber)) <height && (d.y - circleScale(d.commonNumber))>0){return d.y += dy} 
+                                    else return (d.y - circleScale(d.commonNumber))>0 ? d.y -= circleScale(d.commonNumber) : d.y += circleScale(d.commonNumber)})
 
     sources.attr('x1', function(d) {return d.source.x})
            .attr('y1', function(d) {return d.source.y})
@@ -225,7 +228,7 @@ function createWidget(max, circleScale, simulation) {
   w = 150, h = 80 
   var svgDC = d3.select('#dotAndCircle').append('svg').attr('width', w).attr('height', h)
   svgDC.append('g').append('circle').attr('id', 'circleDescritpion').attr('r', 10).attr('cx', w/10).attr('cy', h/3).attr('fill', color(0))
-  svgDC.append('text').attr('class', 'descriptionText').attr('x', w/5 + 10).attr('y', h/3 + 2).text('My Instagram Friends')
+  svgDC.append('text').attr('class', 'descriptionText').attr('x', w/5 + 10).attr('y', h/3 + 2).text('My Instagram Friends*')
   svgDC.append('g').append('line').attr('id', 'lineDescritpion').attr('x1', w/10 - 10).attr('y1', h*2/3).attr('x2', w/10 + 10).attr('y2', h*2/3).attr('stroke','grey').style('stroke-width', 3)
   svgDC.append('text').attr('class', 'descriptionText').attr('x', w/5 + 10).attr('y', h*2/3 + 2).text('Mutual follow')
 }

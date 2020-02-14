@@ -5,8 +5,8 @@ body{
 #header{
     position: absolute;
     width: 30%;
-    left: 2%;
-    top: 5%;
+    left: 1%;
+    top: 2%;
 }
 
 #headerContainer{
@@ -81,4 +81,9 @@ img {
 
 #textDescription{
     font-weight: 300;
+    margin-bottom: 3px;
+}
+
+#friendsExplaination{
+    font-size: 13px;
 }
