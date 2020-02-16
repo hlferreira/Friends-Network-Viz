@@ -93,12 +93,12 @@ function genViz() {
   .call(d3.drag().on('start', dragStart).on('drag', dragged))
 
 simulation.on('tick', function (d) {
-  link.attr('x1', d => d.source.x)
-  .attr('y1', d => d.source.y)
-  .attr('x2', d => d.target.x)
-  .attr('y2', d => d.target.y)
-  
-  node.attr('cx', d => d.x).attr('cy', d => d.y)
+    link.attr('x1', d => d.source.x)
+    .attr('y1', d => d.source.y)
+    .attr('x2', d => d.target.x)
+    .attr('y2', d => d.target.y)
+    
+    node.attr('cx', d => d.x).attr('cy', d => d.y)
 });
 
   function bStart(){
@@ -123,35 +123,6 @@ simulation.on('tick', function (d) {
     if(d3.event.selection != null) {
       d3.select(this).call(d3.event.target.move, null)
     }
-  }
-
-  sources = []
-  targets = []
-  brushed = []
-  function dragStart(){   
-    sources = link.filter(function(d) {return d.source.selected})
-    targets = link.filter(function(d) {return d.target.selected})
-    brushed = d3.selectAll('.brushSelected')
-  }
-
-  function dragged() {
-    dx = d3.event.dx;
-    dy = d3.event.dy;
-
-    brushed.attr('cx', function(d) {if((d.x + circleScale(d.commonNumber)) <width && (d.x - circleScale(d.commonNumber))>0){return d.x += dx}
-                                    else return (d.x - circleScale(d.commonNumber))>0 ? d.x -= circleScale(d.commonNumber) : d.x += circleScale(d.commonNumber)})
-           .attr('cy', function(d) {if((d.y + circleScale(d.commonNumber)) <height && (d.y - circleScale(d.commonNumber))>0){return d.y += dy} 
-                                    else return (d.y - circleScale(d.commonNumber))>0 ? d.y -= circleScale(d.commonNumber) : d.y += circleScale(d.commonNumber)})
-
-    sources.attr('x1', function(d) {return d.source.x})
-           .attr('y1', function(d) {return d.source.y})
-           .attr('x2', function(d) {return d.target.x})
-           .attr('y2', function(d) {return d.target.y})
-
-    targets.attr('x1', function(d) {return d.source.x})
-           .attr('y1', function(d) {return d.source.y})
-           .attr('x2', function(d) {return d.target.x})
-           .attr('y2', function(d) {return d.target.y})
   }
 
 }
@@ -234,6 +205,10 @@ function createWidget(max, circleScale, simulation) {
 }
 
 function reconfigureRadius(simulation, radius){
+
+  nodes[0].fx = width/2;
+  nodes[0].fy = height/2 + 50;
+
   if(filterRadius.indexOf(radius) != -1) {
     links.filter(function(d){
       if((circleScale(d.source.commonNumber) == radius && d.source.id != nodes[0].id) || circleScale(d.target.commonNumber) == radius){
@@ -277,7 +252,7 @@ function reconfigureRadius(simulation, radius){
           else
           { dispatch.call('userInfo', d,d);
             d3.event.stopPropagation();}})
-        //.call(d3.drag().on('start', dragStart).on('drag', dragged))*/
+        .call(d3.drag().on('start', dragStart).on('drag', dragged))
 
     filterRadius.splice(filterRadius.indexOf(radius),1)
   }
@@ -302,17 +277,21 @@ function reconfigureRadius(simulation, radius){
     })
     filterRadius.push(radius);
   }
-    
-  simulation.force('charge', d3.forceManyBody().strength(-30))
-  .force('link', d3.forceLink(currentLinks).id(d => d.id).distance(100))
-  .force('center', d3.forceCenter(width/2, height/2))
+  
+  console.log(-currentNodes.length/4);
+  simulation.force('charge', d3.forceManyBody().strength(-currentNodes.length/4))
+  .force('link', d3.forceLink(currentLinks).id(d => d.id).distance(currentNodes.length/2))
+  .force('center', d3.forceCenter(width/2, height/2 + 50))
   .force('collide', d3.forceCollide(10)).alphaTarget(0.2).restart();
 
-  setTimeout(function() {simulation.stop()}, 20000)
+  setTimeout(function() {simulation.stop()}, 25000)
 
 }
 
 function reconfigureColor(simulation, c){
+
+  nodes[0].fx = width/2;
+  nodes[0].fy = height/2 + 50;
 
   if(filterColor.indexOf(c) != -1) {
     links.filter(function(d){
@@ -333,7 +312,6 @@ function reconfigureColor(simulation, c){
         currentNodes.push(d)
       }
     })
-
 
     node = d3.select('.networkCircles').selectAll('circle')
         .data(currentNodes)
@@ -357,7 +335,7 @@ function reconfigureColor(simulation, c){
           else
           { dispatch.call('userInfo', d,d);
             d3.event.stopPropagation();}})
-        //.call(d3.drag().on('start', dragStart).on('drag', dragged))*/
+        .call(d3.drag().on('start', dragStart).on('drag', dragged))
 
     filterColor.splice(filterColor.indexOf(c),1)
   }
@@ -382,13 +360,14 @@ function reconfigureColor(simulation, c){
     filterColor.push(c);
 
   }
-    
-  simulation.force('charge', d3.forceManyBody().strength(-10))
-  .force('link', d3.forceLink(currentLinks).id(d => d.id).distance(100))
-  .force('center', d3.forceCenter(width/2, height/2))
+  
+  console.log(-currentNodes.length/4);
+  simulation.force('charge', d3.forceManyBody().strength(-currentNodes.length/4))
+  .force('link', d3.forceLink(currentLinks).id(d => d.id).distance(currentNodes.length/2))
+  .force('center', d3.forceCenter(width/2, height/2 + 50))
   .force('collide', d3.forceCollide(10)).alphaTarget(0.2).restart();
 
-  setTimeout(function() {simulation.stop()}, 20000)
+  setTimeout(function() {simulation.stop()}, 25000)
 }
 
 
@@ -405,6 +384,38 @@ function mouseover(d) {
     + "</div>")
     .style('left', (d3.event.pageX + 15) + "px").style('top', (d3.event.pageY - 40) + "px");
 }
+
+sources = []
+targets = []
+brushed = []
+function dragStart(){   
+  sources = link.filter(function(d) {return d.source.selected})
+  targets = link.filter(function(d) {return d.target.selected})
+  brushed = d3.selectAll('.brushSelected')
+}
+
+
+//DRAG FUNCTION
+function dragged() {
+  dx = d3.event.dx;
+  dy = d3.event.dy;
+
+  brushed.attr('cx', function(d) {if((d.x + circleScale(d.commonNumber)) <width && (d.x - circleScale(d.commonNumber))>0){return d.x += dx}
+                                  else return (d.x - circleScale(d.commonNumber))>0 ? d.x -= circleScale(d.commonNumber) : d.x += circleScale(d.commonNumber)})
+         .attr('cy', function(d) {if((d.y + circleScale(d.commonNumber)) <height && (d.y - circleScale(d.commonNumber))>0){return d.y += dy} 
+                                  else return (d.y - circleScale(d.commonNumber))>0 ? d.y -= circleScale(d.commonNumber) : d.y += circleScale(d.commonNumber)})
+
+  sources.attr('x1', function(d) {return d.source.x})
+         .attr('y1', function(d) {return d.source.y})
+         .attr('x2', function(d) {return d.target.x})
+         .attr('y2', function(d) {return d.target.y})
+
+  targets.attr('x1', function(d) {return d.source.x})
+         .attr('y1', function(d) {return d.source.y})
+         .attr('x2', function(d) {return d.target.x})
+         .attr('y2', function(d) {return d.target.y})
+}
+
 
 //this function is only here because i was lazy doing the JSON file
 function jsonFix() {
